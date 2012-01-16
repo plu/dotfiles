@@ -1,0 +1,10 @@
+*.o
+*.pyc
+*.so
+.DS_Store
+.llrc
+.tracker.json
+inc
+MANIFEST
+META.yml
+xing-admins.kdb.lock

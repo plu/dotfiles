@@ -1,0 +1,49 @@
+[user]
+    name = Johannes Plunien
+    email = johannes.plunien@xing.com
+[color]
+    status = auto
+    branch = auto
+    ui = auto
+    interactive = auto
+[alias]
+    st = status
+    br = branch
+    ci = commit
+    co = checkout
+    di = diff
+    sy = remote update
+    staged = diff --cached
+    w = whatchanged
+    dc = svn dcommit
+    up = svn rebase --all
+    wtf = !git-wtf
+[core]
+    excludesfile = ~/.gitignore-global
+    pager = cat
+    legacyheaders = false
+[diff]
+    rename = copy
+    renamelimit = 0
+[format]
+    numbered = auto
+[repack]
+    usedeltabaseoffset = true
+[svn]
+    rmdir = true
+[cpan-import]
+    backpan = true
+[github-import]
+    remote = origin
+[help]
+    autocorrect = -1
+[push]
+    default = tracking
+[apply]
+    whitespace = nowarn
+[sendemail]
+    suppresscc = all
+    to = hudson@build-1.dev.fra2.xing.com
+    from = johannes.plunien@xing.com
+[branch]
+    autosetuprebase = always

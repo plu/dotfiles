@@ -1,0 +1,2 @@
+-l=160   # Max line width is 160 cols, hey, we have widescreen displays, dont we?
+-se      # Errors to STDERR

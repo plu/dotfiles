@@ -1,0 +1,10 @@
+alias ls='ls $LSOPTIONS'
+alias l='ls $LSOPTIONS -l'
+alias ll='ls $LSOPTIONS -lA'
+alias diff='diff -Nuarbw'
+alias kaj='jobs -l | awk '\''{print $2}'\'' | xargs kill -9'
+alias noll='eval $(perl -Mlocal::lib='--deactivate-all')'
+alias mountpb='hdiutil attach -nobrowse ~/Dropbox/Development/perlbrew.sparseimage'
+alias umountpb='diskutil eject /Volumes/perlbrew'
+alias mutt='TERM=vt100 mutt'
+alias natsort="perl -MSort::Key::Natural=natsort -e '@s=<>; print for natsort @s'"

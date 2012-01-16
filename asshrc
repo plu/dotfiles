@@ -1,0 +1,3 @@
+[main]
+worker = 50
+connections = 150

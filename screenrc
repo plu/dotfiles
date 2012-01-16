@@ -1,0 +1,18 @@
+startup_message off
+#backtick 1 0 0 /home/plu/bin/netbar
+#hardstatus alwayslastline "%H | %{wb} %c:%s | %d.%m.%Y %{wr} Load: %l %{wb} %w"
+#hardstatus alwayslastline "%{wk} %H | %c:%s | %d.%m.%Y | %l | %w"
+#hardstatus alwayslastline "%{wk} [ND1] | %c:%s | %d.%m.%Y | %l | %w"
+#hardstatus lastline "%1`"
+#hardstatus alwayslastline "%{wk}[ND1]-[%d.%m.%Y %c]-[%l] - %w - %1`"
+hardstatus alwayslastline "%{wk}A:[%H]-[%d.%m.%Y %c]-[%l] - %w"
+
+vbell_msg " *beep* "
+vbell off
+
+#escape ^Bb
+
+defscrollback     1000
+
+autodetach on
+defutf8 on

@@ -1,0 +1,33 @@
+set imap_user = "plu@pqpq.de"
+
+set smtp_url = "smtp://plu@pqpq.de@smtp.gmail.com:587/"
+set from = "plu@pqpq.de"
+set realname = "Johannes Plunien"
+
+set folder = "imaps://imap.gmail.com:993"
+set spoolfile = "+INBOX"
+set postponed="+[Gmail]/Drafts"
+
+set header_cache=~/.mutt/cache/headers
+set message_cachedir=~/.mutt/cache/bodies
+set certificate_file=~/.mutt/certificates
+
+set sort = reverse-date
+set move = no
+
+bind index G imap-fetch-mail
+
+color    hdrdefault    black           default   
+color    quoted        black           default   
+color    signature     brightblack     default   
+color    indicator     brightwhite     red
+color    attachment    black           default
+color    error         black           default   
+color    message       blue            default   
+color    search        brightwhite     magenta
+color    status        brightyellow    blue
+color    tree          black           default   
+color    normal        blue            default   
+color    tilde         green           default   
+color    bold          brightyellow    default   
+color    markers       black           default

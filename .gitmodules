@@ -1,0 +1,3 @@
+[submodule "dotfiles-secret"]
+	path = dotfiles-secret
+	url = file:///Users/johannes.plunien/Dropbox/git/dotfiles-secret.git
