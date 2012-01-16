@@ -1,3 +1,6 @@
 [submodule "dotfiles-secret"]
 	path = dotfiles-secret
 	url = file:///Users/plu/Dropbox/git/dotfiles-secret.git
+[submodule "vim/bundle/nerdtree"]
+	path = vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
