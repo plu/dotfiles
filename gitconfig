@@ -47,3 +47,12 @@
     from = johannes.plunien@xing.com
 [branch]
     autosetuprebase = always
+[pull]
+    rebase = true
+[http]
+    sslVerify = false
+[grep]
+    lineNumber = true
+    extendedRegexp = true
+[log]
+    decorate = short
