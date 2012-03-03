@@ -5,4 +5,4 @@ function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/[\1$(parse_git_dirty)]/"
 }
 
-which hub && eval $(hub alias -s bash)
+which -s hub && eval $(hub alias -s bash)
