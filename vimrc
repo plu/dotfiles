@@ -7,7 +7,6 @@ call pathogen#infect()
 " Do not clear sreen on exit.
 "set t_ti= t_te=
 
-set gfn=Courier:h15
 set browsedir  =current
 set whichwrap+=>
 set whichwrap+=<
@@ -24,12 +23,35 @@ set backspace=indent,eol,start
 set ruler
 set showcmd
 set incsearch
+set guifont=Monaco:h12
+set cursorline
+colorscheme railscasts
 
-" Show file explorer
-nnoremap <F6> :Explore<CR>
+nmap <leader>a <Esc>:Ack!
+map <leader>n :NERDTreeToggle<CR>
+
+" Navigation between split windows
+map <c-j> <c-w>j
+map <c-k> <c-w>k
+map <c-l> <c-w>l
+map <c-h> <c-w>h
 
 " Perl tidy
-nnoremap <F10> :%!perltidy -l=160 -q<CR>
+" define :Tidy command to run perltidy on visual selection || entire buffer"
+command -range=% -nargs=* Tidy <line1>,<line2>!perltidy -l=160 -q
+
+" run :Tidy on entire buffer and return cursor to (approximate) original position"
+fun DoTidy()
+    let Pos = line2byte( line( "." ) ) 
+    :Tidy
+    exe "goto " . Pos 
+endfun
+
+" shortcut for normal mode to run on entire buffer then return to current line"
+au Filetype perl nmap <leader>pt :call DoTidy()<CR>
+
+" shortcut for visual mode to run on the the current visual selection"
+au Filetype perl vmap <leader>pt :Tidy<CR>
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
