@@ -25,7 +25,12 @@ set showcmd
 set incsearch
 set guifont=Monaco:h12
 set cursorline
+set number
+set guicursor+=a:blinkon0
+
 colorscheme railscasts
+
+let g:fugitive_github_domains = ['source.xing.com']
 
 nmap <leader>a <Esc>:Ack!
 map <leader>n :NERDTreeToggle<CR>

@@ -5,7 +5,7 @@
 " License:      public domain
 " Version:      0.1
 
-" Boilerplate: {{{1
+" Boilerplate: 
 set background=light
 highlight clear
 
@@ -17,7 +17,7 @@ let g:colors_name = "mac_classic"
 
 
 
-" Colors: {{{1
+" Colors: 
 " TODO figure out how to not highlight TODO
 "
 " #000000
@@ -41,30 +41,30 @@ let g:colors_name = "mac_classic"
 " #EFEFEF - LineNumber & Non-Current StatusLine
 " #F0F6FF - CursorLine & CursorColumn
 " #FFFFFF - WHITE
-" }}}
+" 
 
-" GUI: {{{1
-hi Cursor  guifg=#FFFFFF ctermfg=15 guibg=#3C4C72 ctermbg=240
+" GUI: 
+hi Cursor  guifg=#ffffff ctermfg=15 guibg=#336699 ctermbg=240
 hi Visual  guibg=#C6DEFF ctermbg=189
-hi CursorLine  guibg=#F0F6FF ctermbg=15
+hi CursorLine  guibg=#e9e9e9 ctermbg=15
 hi CursorColumn  guibg=#F0F6FF ctermbg=15
-hi LineNr  guifg=#808080 ctermfg=244 guibg=#EFEFEF ctermbg=7
+hi LineNr  guifg=#888888 ctermfg=244 guibg=#e9e9e9 ctermbg=7
 hi VertSplit  guifg=#FFFFFF ctermfg=15 guibg=#CFCFCF ctermbg=252 gui=NONE
 hi MatchParen  guifg=#1E39F6 ctermfg=27 guibg=NONE gui=bold
 hi Pmenu guibg=#EFEFEF ctermbg=7
 hi PmenuSel  guibg=#C6DEFF ctermbg=189
 hi Directory  guifg=#D51015 ctermfg=160 gui=bold
 hi Folded  guifg=#0066FF ctermfg=27 guibg=#FFFFFF ctermbg=15
-" StatusLine: {{{2
+" StatusLine: 
 hi StatusLine  guifg=#000000 ctermfg=0 guibg=#C6DEFF ctermbg=189 gui=italic
 hi StatusLineNC  guifg=#000000 ctermfg=0 guibg=#EFEFEF ctermbg=7 gui=NONE
 
-" Search: {{{2
+" Search: 
 " [IncSearch is stronger than Search]
 hi IncSearch  guifg=NONE guibg=#FFCE77 ctermbg=222 gui=NONE
 hi Search  guibg=#FFE6BB ctermbg=223
 
-" Syntax: {{{1
+" Syntax: 
 hi Normal  guifg=#000000 ctermfg=0 guibg=#FFFFFF ctermbg=15
 hi Boolean  guifg=#6E79F1 ctermfg=69 gui=bold
 hi Character  guifg=#D51015 ctermfg=160 gui=bold
@@ -94,7 +94,7 @@ hi Underlined  gui=underline
 hi NonText  guifg=#DFDFDF ctermfg=253 guibg=#FFFFFF ctermbg=15
 hi SpecialKey  guifg=#DFDFDF ctermfg=253 guibg=#FFFFFF ctermbg=15
 
-" Diff styles {{{1
+" Diff styles 
 hi diffAdded guifg=#007B22 guibg=#FFFFFF ctermfg=28 ctermbg=15
 hi diffRemoved guifg=#D51015 guibg=#FFFFFF ctermfg=160 ctermbg=15
 hi diffFile guifg=#6E79F1 guibg=#FFFFFF ctermfg=69 ctermbg=15
@@ -105,14 +105,14 @@ hi diffAdd guifg=#007B22 guibg=#FFFFFF ctermfg=28 ctermbg=15
 hi diffChange guifg=#007B22 guibg=#FFFFFF ctermfg=28 ctermbg=15
 hi diffText guifg=#007B22 guibg=#FFFFFF ctermfg=28 ctermbg=15
 hi link diffDelete diffRemoved
-" Git styles {{{1
+" Git styles 
 hi gitcommitFirstLine guifg=#000000 guibg=#FFFFFF ctermfg=0 ctermbg=15
 hi gitcommitSelectedType guifg=#007B22 guibg=#FFFFFF ctermfg=28 ctermbg=15
 hi link gitcommitSelectedFile gitcommitSelectedType
 hi gitcommitDiscardedType guifg=#D51015 guibg=#FFFFFF ctermfg=160 ctermbg=15
 hi link gitcommitDiscardedFile gitcommitDiscardedType
 hi gitcommitUntrackedFile guifg=#6E79F1 guibg=#FFFFFF ctermfg=69 ctermbg=15
-" Ruby styles {{{1
+" Ruby styles 
 hi rubyClass  guifg=#1E39F6 ctermfg=27 gui=bold
 hi rubyFunction  guifg=#0000A2 ctermfg=19 gui=bold
 hi rubyInterpolationDelimiter  guifg=#00BC41 ctermfg=35
@@ -143,9 +143,9 @@ hi rubyRailsMethod  guifg=#3C4C72 ctermfg=240 gui=bold
 hi link erubyComment Comment
 hi erubyRailsMethod  guifg=#3C4C72 ctermfg=240 gui=bold
 
-" XML: {{{1
+" XML: 
 hi link xmlEndTag xmlTag
-" HTML: {{{1
+" HTML: 
 hi htmlTag  guifg=#1E39F6 ctermfg=27
 hi link htmlEndTag htmlTag
 hi link htmlTagName htmlTag
@@ -158,7 +158,7 @@ hi link htmlH4 htmlH1
 hi link htmlH5 htmlH1
 hi link htmlH6 htmlH1
 
-" JavaScript: {{{1
+" JavaScript: 
 hi javaScriptFunction  guifg=#1E39F6 ctermfg=27 gui=bold
 hi javaScriptFuncName  guifg=#318495 ctermfg=66 gui=italic
 hi javaScriptLabel  guifg=#0000A2 ctermfg=19 gui=bold
@@ -175,12 +175,12 @@ hi javaScriptSpecial  guifg=#00BC41 ctermfg=35 gui=NONE
 " * javaScriptFuncName for object literal style functions - e.g.: 
 "     myFunction: function() { ... }
 
-" YAML: {{{1
+" YAML: 
 hi yamlAnchor  guifg=#318495 ctermfg=66
 hi yamlAlias  guifg=#318495 ctermfg=66
 hi yamlDocumentHeader  guibg=#F2F2F2 ctermbg=7
 
-" CSS: {{{1
+" CSS: 
 hi cssTagName  gui=bold
 hi cssIdentifier  gui=italic
 hi link cssClassName cssIdentifier
@@ -204,24 +204,24 @@ hi cssColor  guifg=#D51015 ctermfg=160 gui=bold
 hi cssValueLength  guifg=#0000A2 ctermfg=19
 hi cssImportant  guifg=#1E39F6 ctermfg=27 gui=bold
 
-" Vimscript: {{{1
+" Vimscript: 
 hi vimGroup  guifg=#007B22 ctermfg=28 gui=bold
 hi link vimHiGroup vimGroup
 hi vimCommentTitle  guifg=#3C4C72 ctermfg=240 gui=bold
 hi helpSpecial guifg=#6E79F1 ctermfg=69
 
-" Markdown: {{{1
+" Markdown: 
 hi markdownBold gui=bold
 hi markdownItalic gui=italic
 hi markdownCode  guifg=#007B22 ctermfg=28
 hi link markdownCodeBlock markdownCode
 
-" Outliner: {{{1
+" Outliner: 
 hi BT1 guifg=#808080 ctermfg=244 gui=italic
 hi OL1 guifg=#000000 ctermfg=0 gui=bold
 hi OL2 guifg=#0000A2 ctermfg=19 gui=bold
 hi OL3 guifg=#007B22 ctermfg=28 gui=bold
 hi OL4 guifg=#6E79F1 ctermfg=69 gui=NONE
-" Modelines: {{{1
+" Modelines: 
 " vim: nowrap fdm=marker
-" }}}
+" 
