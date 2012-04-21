@@ -43,6 +43,32 @@ let g:colors_name = "mac_classic"
 " #FFFFFF - WHITE
 " 
 
+hi perlPackageDecl guifg=#000000
+hi perlStatementPackage guifg=#2900FF gui=bold
+hi perlStatementInclude guifg=#2900FF gui=bold
+hi perlString guifg=#E70000
+"hi perlString guifg=#008200
+hi perlStringUnexpanded guifg=#008200
+hi perlQQ guifg=#008200
+hi perlStringStartEnd guifg=#008200
+hi perlVarPlain guifg=#0098AA
+hi perlPackageRef guifg=#0098AA
+hi perlVarPlain2 guifg=#0098AA
+hi perlVarBlock2 guifg=#000000
+hi perlMethod guifg=#000000
+hi perlOperator guifg=#495E89
+hi perlStatementHash guifg=#495E89
+hi perlStatementList guifg=#495E89
+hi perlStatementScalar guifg=#495E89
+hi perlMatch guifg=#00C700
+hi perlMatchStartEnd guifg=#495E89
+hi perlStatementTime guifg=#495E89
+hi perlNumber guifg=#000000
+hi perlSpecialString guifg=#00C700
+hi perlVarSimpleMember guifg=#000000
+hi perlStatementStorage guifg=#2900FF gui=bold
+hi perlPackageConst guifg=#7066FF
+
 " GUI: 
 hi Cursor  guifg=#ffffff ctermfg=15 guibg=#336699 ctermbg=240
 hi Visual  guibg=#C6DEFF ctermbg=189

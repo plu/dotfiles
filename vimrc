@@ -62,6 +62,15 @@ au Filetype perl nmap <leader>pt :call DoTidy()<CR>
 " shortcut for visual mode to run on the the current visual selection"
 au Filetype perl vmap <leader>pt :Tidy<CR>
 
+" Show syntax highlighting groups for word under cursor
+nmap <C-S-P> :call <SID>SynStack()<CR>
+function! <SID>SynStack()
+  if !exists("*synstack")
+    return
+  endif
+  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
+
 " Don't use Ex mode, use Q for formatting
 map Q gq
 
