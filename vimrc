@@ -27,7 +27,12 @@ set guifont=Monaco:h12
 set cursorline
 set guicursor+=a:blinkon0
 
-colorscheme railscasts
+if ! has("gui_running")
+  set t_Co=256
+  colorscheme mac_classic
+else
+  colorscheme mac_classic
+endif
 
 let g:fugitive_github_domains = ['source.xing.com']
 
