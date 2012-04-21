@@ -25,7 +25,6 @@ set showcmd
 set incsearch
 set guifont=Monaco:h12
 set cursorline
-set number
 set guicursor+=a:blinkon0
 
 colorscheme railscasts
