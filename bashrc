@@ -25,4 +25,3 @@ source_dir "$HOME/.bash.d/$HOSTNAME"
 
 unset LC_CTYPE
 unset LANG
-cd
