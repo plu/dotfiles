@@ -1,1 +1,0 @@
-export LSOPTIONS='--color=auto'
