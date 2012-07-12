@@ -1,6 +1,7 @@
 *.o
 *.pyc
 *.so
+*.sw*
 .DS_Store
 .llrc
 .tracker.json
