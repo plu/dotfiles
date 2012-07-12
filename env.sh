@@ -1,4 +1,6 @@
 eval `direnv hook $0`
+export PERLBREW_HOME=/opt/perlbrew
+[[ -f "/opt/perlbrew/etc/bashrc" ]] && source /opt/perlbrew/etc/bashrc
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 [[ -f "$HOME/.dotfiles-secret/env.sh" ]] && source $HOME/.dotfiles-secret/env.sh
 
