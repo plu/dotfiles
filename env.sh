@@ -1,4 +1,4 @@
-eval `direnv hook $0`
+which direnv >/dev/null && eval `direnv hook $0`
 export PERLBREW_HOME=/opt/perlbrew
 [[ -f "/opt/perlbrew/etc/bashrc" ]] && source /opt/perlbrew/etc/bashrc
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
