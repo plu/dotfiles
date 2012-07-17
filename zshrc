@@ -31,7 +31,7 @@ ZSH_THEME="../../plu"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git rvm)
 
-$HOME/.dotfiles/install.sh
-$HOME/.dotfiles-secret/install.sh
+[[ -x $HOME/.dotfiles/install.sh ]] && $HOME/.dotfiles/install.sh
+[[ -x $HOME/.dotfiles-secret/install.sh ]] && $HOME/.dotfiles-secret/install.sh
 source $ZSH/oh-my-zsh.sh
 source $HOME/.env.sh
