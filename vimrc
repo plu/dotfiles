@@ -49,6 +49,13 @@ map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
 
+" Highlight trailing whitespace
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
+
 " Perl tidy
 " define :Tidy command to run perltidy on visual selection || entire buffer"
 command -range=% -nargs=* Tidy <line1>,<line2>!perltidy -l=160 -q
