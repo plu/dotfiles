@@ -149,13 +149,13 @@ hi rubyStringDelimiter  guifg=#007B22 ctermfg=28
 hi rubyInstanceVariable  guifg=#318495 ctermfg=66
 hi rubyInclude  guifg=#1E39F6 ctermfg=27 gui=bold
 hi rubyGlobalVariable  guifg=#318495 ctermfg=66
-hi rubyRegexp  guifg=#E18AC7 ctermfg=176
-hi rubyRegexpAnchor  guifg=#E18AC7 ctermfg=176
-hi rubyRegexpQuantifier  guifg=#E18AC7 ctermfg=176
-hi rubyRegexpParens  guifg=#E18AC7 ctermfg=176
+hi rubyRegexp  guifg=#007B22 ctermfg=28
+hi rubyRegexpAnchor  guifg=#007B22 ctermfg=28
+hi rubyRegexpQuantifier  guifg=#007B22 ctermfg=28
+hi rubyRegexpParens  guifg=#007B22 ctermfg=28
 hi rubyRegexpEscape  guifg=#00BC41 ctermfg=35
-hi rubyRegexpCharClass  guifg=#00BC41 ctermfg=35
-hi rubyRegexpDelimiter  guifg=#E18AC7 ctermfg=176
+hi rubyRegexpCharClass  guifg=#007B22 ctermfg=28
+hi rubyRegexpDelimiter  guifg=#007B22 ctermfg=28
 hi rubyEscape  guifg=#00BC41 ctermfg=35
 hi rubyControl  guifg=#1E39F6 ctermfg=27 gui=bold
 hi rubyOperator  guifg=#1E39F6 ctermfg=27 gui=bold
