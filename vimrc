@@ -27,6 +27,8 @@ set guifont=Monaco:h12
 set cursorline
 set guicursor+=a:blinkon0
 set number
+set listchars=tab:▸\ ,eol:¬
+set list!
 
 if ! has("gui_running")
   set t_Co=256
