@@ -80,6 +80,7 @@ map Q gq
 if &t_Co > 2 || has("gui_running")
   syntax on
   set hlsearch
+  set guioptions=egmrt
 endif
 
 " Only do this part when compiled with support for autocommands.
