@@ -26,6 +26,7 @@ set incsearch
 set guifont=Monaco:h12
 set cursorline
 set guicursor+=a:blinkon0
+set number
 
 if ! has("gui_running")
   set t_Co=256
