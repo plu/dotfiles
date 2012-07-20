@@ -94,7 +94,7 @@ hi Search  guibg=#FFE6BB ctermbg=223
 hi Normal  guifg=#000000 ctermfg=0 guibg=#FFFFFF ctermbg=15
 hi Boolean  guifg=#6E79F1 ctermfg=69 gui=bold
 hi Character  guifg=#D51015 ctermfg=160 gui=bold
-hi Comment  guifg=#888888 ctermfg=27 gui=italic
+hi Comment  guifg=#9e9e9e ctermfg=247 gui=italic
 hi Conditional  guifg=#1E39F6 ctermfg=27 gui=bold
 hi Constant  guifg=#D51015 ctermfg=160 gui=bold
 hi Define  guifg=#1E39F6 ctermfg=27 gui=bold
