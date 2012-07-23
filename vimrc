@@ -7,28 +7,30 @@ call pathogen#infect()
 " Do not clear sreen on exit.
 "set t_ti= t_te=
 
-set browsedir  =current
-set whichwrap+=>
-set whichwrap+=<
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set nowrap
-set hidden
+set backspace=indent,eol,start
+set browsedir =current
+set cursorline
 set expandtab
+set guicursor+=a:blinkon0
+set guifont=Monaco:h12
+set hidden
+set history=5000
+set incsearch
+set lazyredraw
+set list!
+set listchars=tab:▸\ ,eol:¬
 set noerrorbells
 set nostartofline
-set history=5000
-set backspace=indent,eol,start
-set ruler
-set showcmd
-set incsearch
-set guifont=Monaco:h12
-set cursorline
-set guicursor+=a:blinkon0
+set nowrap
 set number
-set listchars=tab:▸\ ,eol:¬
-set list!
+set ruler
+set shiftwidth=4
+set showcmd
+set softtabstop=4
+set tabstop=4
+set ttyfast
+set whichwrap+=<
+set whichwrap+=>
 
 if ! has("gui_running")
   set t_Co=256
