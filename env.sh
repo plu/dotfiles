@@ -39,6 +39,7 @@ alias kaj='jobs -l | awk '\''{print $2}'\'' | xargs kill -9'
 alias l='ls $LSOPTIONS -l'
 alias ll='ls $LSOPTIONS -lA'
 alias ls='ls $LSOPTIONS'
+alias mate=mvim
 alias mountpb='hdiutil attach -nobrowse ~/Dropbox/Development/perlbrew.sparseimage'
 alias mutt='TERM=vt100 mutt'
 alias natsort="perl -MSort::Key::Natural=natsort -e '@s=<>; print for natsort @s'"
