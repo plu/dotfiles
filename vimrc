@@ -8,8 +8,9 @@ call pathogen#infect()
 "set t_ti= t_te=
 
 set backspace=indent,eol,start
-set browsedir =current
+set browsedir=current
 set cursorline
+set enc=utf-8
 set expandtab
 set guicursor+=a:blinkon0
 set guifont=Monaco:h12
