@@ -9,7 +9,6 @@ call pathogen#infect()
 
 set backspace=indent,eol,start
 set browsedir=current
-set cursorline
 set enc=utf-8
 set expandtab
 set guicursor+=a:blinkon0
