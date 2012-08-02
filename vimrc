@@ -44,6 +44,7 @@ let g:fugitive_github_domains = ['source.xing.com']
 nmap <leader>a <Esc>:Ack!
 map <leader>n :NERDTreeToggle<CR>
 map <leader>r :NERDTreeFind<CR>
+map <leader>T :CommandTBuffer<CR>
 
 " Navigation between split windows
 map <c-j> <c-w>j
