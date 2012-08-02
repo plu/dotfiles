@@ -45,6 +45,9 @@ nmap <leader>a <Esc>:Ack!
 map <leader>n :NERDTreeToggle<CR>
 map <leader>r :NERDTreeFind<CR>
 map <leader>T :CommandTBuffer<CR>
+map <leader>ba :ToggleBookmark<CR>
+map <leader>bn :NextBookmark<CR>
+map <leader>bp :PreviousBookmark<CR>
 
 " Navigation between split windows
 map <c-j> <c-w>j
