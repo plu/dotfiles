@@ -61,6 +61,10 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
+" Spaces
+autocmd Filetype html setlocal ts=2 sts=2 sw=2
+autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
+
 " Perl tidy
 " define :Tidy command to run perltidy on visual selection || entire buffer"
 command -range=% -nargs=* Tidy <line1>,<line2>!perltidy -l=160 -q
