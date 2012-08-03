@@ -17,7 +17,6 @@ set hidden
 set history=5000
 set incsearch
 set lazyredraw
-set list!
 set noerrorbells
 set nostartofline
 set nowrap
