@@ -28,3 +28,6 @@
 [submodule "vim/bundle/VimBookmarking"]
 	path = vim/bundle/VimBookmarking
 	url = git://github.com/dterei/VimBookmarking.git
+[submodule "vim/bundle/current-func-info"]
+	path = vim/bundle/current-func-info
+	url = git://github.com/tyru/current-func-info.vim.git
