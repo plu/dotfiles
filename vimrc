@@ -46,6 +46,8 @@ map <leader>T :CommandTBuffer<CR>
 map <leader>ba :ToggleBookmark<CR>
 map <leader>bn :NextBookmark<CR>
 map <leader>bp :PreviousBookmark<CR>
+map <leader>xs :!xing sandbox sync<CR>
+map <leader>xr :!xing sandbox restart<CR>
 
 " Navigation between split windows
 map <c-j> <c-w>j
