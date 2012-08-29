@@ -16,6 +16,7 @@ set guifont=Monaco:h12
 set hidden
 set history=5000
 set incsearch
+set laststatus=2
 set lazyredraw
 set noerrorbells
 set nostartofline
@@ -29,6 +30,8 @@ set tabstop=4
 set ttyfast
 set whichwrap+=<
 set whichwrap+=>
+
+let &statusline = '%{cfi#get_func_name() == "" ? "" : "[sub:" . cfi#get_func_name() . "]"}'
 
 if ! has("gui_running")
   set t_Co=256
