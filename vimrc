@@ -31,7 +31,10 @@ set ttyfast
 set whichwrap+=<
 set whichwrap+=>
 
-let &statusline = '%{cfi#get_func_name() == "" ? "" : "[sub:" . cfi#get_func_name() . "]"}'
+let &statusline = ''
+let &statusline .= '%{fugitive#statusline()}'
+let &statusline .= '[%{&l:fileencoding == "" ? &encoding : &l:fileencoding}:%{&ff}]'
+let &statusline .= '%<%f %y%m%r %{cfi#get_func_name() == "" ? "" : "[sub:" . cfi#get_func_name() . "]"}'
 
 if ! has("gui_running")
   set t_Co=256
