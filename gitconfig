@@ -26,6 +26,8 @@
 [diff]
     rename = copy
     renamelimit = 0
+[merge]
+    tool = opendiff
 [format]
     numbered = auto
 [repack]
