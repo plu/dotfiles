@@ -72,15 +72,30 @@ autocmd BufWinLeave * call clearmatches()
 autocmd Filetype html setlocal ts=2 sts=2 sw=2
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
 
+" Trailing whitespace killer
+function! StripTrailingWhitespaces()
+    " Preparation: save last search, and cursor position.
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    " Do the business:
+    %s/\s\+$//e
+    " Clean up: restore previous search history, and cursor position
+    let @/=_s
+    call cursor(l, c)
+endfunction
+
+map <leader>ws :call StripTrailingWhitespaces()<CR>
+
 " Perl tidy
 " define :Tidy command to run perltidy on visual selection || entire buffer"
 command -range=% -nargs=* Tidy <line1>,<line2>!perltidy -l=160 -q
 
 " run :Tidy on entire buffer and return cursor to (approximate) original position"
 fun DoTidy()
-    let Pos = line2byte( line( "." ) ) 
+    let Pos = line2byte( line( "." ) )
     :Tidy
-    exe "goto " . Pos 
+    exe "goto " . Pos
 endfun
 
 " shortcut for normal mode to run on entire buffer then return to current line"
