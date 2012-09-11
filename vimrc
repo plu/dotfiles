@@ -52,7 +52,7 @@ map <leader>T :CommandTBuffer<CR>
 map <leader>ba :ToggleBookmark<CR>
 map <leader>bn :NextBookmark<CR>
 map <leader>bp :PreviousBookmark<CR>
-map <leader>xs :!xing sandbox sync -gc --no-color<CR>
+map <leader>xs :!xing sandbox sync -c --no-color<CR>
 map <leader>xr :!xing sandbox restart --no-color<CR>
 
 " Navigation between split windows
