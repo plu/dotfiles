@@ -62,6 +62,8 @@ map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
 
+cmap w!! w !sudo tee % >/dev/null
+
 " Highlight trailing whitespace
 match ExtraWhitespace /\s\+$/
 autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
