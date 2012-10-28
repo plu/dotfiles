@@ -251,4 +251,4 @@ hi OL4 guifg=#6E79F1 ctermfg=69 gui=NONE
 " Modelines: 
 " vim: nowrap fdm=marker
 
-hi ExtraWhitespace ctermbg=red guibg=red
+hi ExtraWhitespace ctermbg=red guibg=#ECE5B6
