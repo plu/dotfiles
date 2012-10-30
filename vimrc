@@ -40,6 +40,7 @@ else
 endif
 
 let g:fugitive_github_domains = ['source.xing.com']
+let g:Powerline_symbols = 'fancy'
 
 nmap <leader>a <Esc>:Ack!
 map <leader>n :NERDTreeToggle<CR>
