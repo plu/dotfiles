@@ -30,6 +30,7 @@ set tabstop=4
 set ttyfast
 set whichwrap+=<
 set whichwrap+=>
+set directory=/tmp
 
 let &statusline = ''
 let &statusline .= '%{fugitive#statusline()}'
