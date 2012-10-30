@@ -32,11 +32,6 @@ set whichwrap+=<
 set whichwrap+=>
 set directory=/tmp
 
-let &statusline = ''
-let &statusline .= '%{fugitive#statusline()}'
-let &statusline .= '[%{&l:fileencoding == "" ? &encoding : &l:fileencoding}:%{&ff}]'
-let &statusline .= '%<%f %y%m%r %{cfi#get_func_name() == "" ? "" : "[sub:" . cfi#get_func_name() . "]"}'
-
 if ! has("gui_running")
   set t_Co=256
   colorscheme mac_classic

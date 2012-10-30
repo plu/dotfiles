@@ -31,3 +31,6 @@
 [submodule "vim/bundle/current-func-info"]
 	path = vim/bundle/current-func-info
 	url = git://github.com/tyru/current-func-info.vim.git
+[submodule "vim/bundle/vim-powerline"]
+	path = vim/bundle/vim-powerline
+	url = git://github.com/Lokaltog/vim-powerline.git
