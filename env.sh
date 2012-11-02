@@ -8,7 +8,6 @@ OS=$(uname)
 if [[ "$OS" == "Darwin" ]]; then
   export COPYFILE_DISABLE=true
   export COPY_EXTENDED_ATTRIBUTES_DISABLE=true
-  export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
   export JAVA_HOME=/Library/Java/Home
   export LSOPTIONS='-G'
   export PATH=/usr/local/mysql/bin:/usr/local/bin:/usr/local/share/git/contrib:/opt/appengine-java-sdk/bin:$PATH
