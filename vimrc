@@ -12,7 +12,7 @@ set browsedir=current
 set enc=utf-8
 set expandtab
 set guicursor+=a:blinkon0
-set guifont=Monaco:h12
+set guifont=Source\ Code\ Pro:h13
 set hidden
 set history=5000
 set incsearch
