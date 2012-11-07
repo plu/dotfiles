@@ -21,7 +21,7 @@
     wtf = !git-wtf
 [core]
     excludesfile = ~/.gitignore-global
-    pager = cat
+    pager = less -FXRS -x4
     legacyheaders = false
 [diff]
     rename = copy
