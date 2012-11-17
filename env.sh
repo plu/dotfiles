@@ -33,6 +33,8 @@ export PAGER=less
 export PATH=$HOME/bin:$PATH:/usr/local/sbin:/usr/sbin:/sbin
 
 alias diff='diff -Nuarbw'
+alias disablevnc='sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -deactivate -configure -access -off'
+alias enablevnc='sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate -configure -access -on -clientopts -setvnclegacy -vnclegacy yes -clientopts -setvncpw -vncpw mypasswd -restart -agent -privs -all'
 alias flushdns='dscacheutil -flushcache'
 alias kaj='jobs -l | awk '\''{print $2}'\'' | xargs kill -9'
 alias l='ls $LSOPTIONS -l'
