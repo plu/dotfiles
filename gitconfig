@@ -15,6 +15,7 @@
     di = diff
     sy = remote update
     staged = diff --cached
+    resetns = !git stash save --keep-index && git stash drop
     w = whatchanged
     dc = svn dcommit
     up = svn rebase --all
