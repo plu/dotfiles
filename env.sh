@@ -25,10 +25,12 @@ fi
 unset LANG
 unset LC_CTYPE
 unset LSCOLORS
+unset LC_ALL
 export EDITOR=vim
 export HISTCONTROL=ignoredups
 export HISTSIZE=10000000000
 export HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S "
+export LC_ALL="en_US.UTF-8"
 export PAGER=less
 export PATH=$HOME/bin:$PATH:/usr/local/sbin:/usr/sbin:/sbin
 
