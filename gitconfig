@@ -27,9 +27,8 @@
 [diff]
     rename = copy
     renamelimit = 0
-	tool = Kaleidoscope
 [merge]
-	tool = Kaleidoscope
+    tool = opendiff
 [format]
     numbered = auto
 [repack]
@@ -61,12 +60,3 @@
     extendedRegexp = true
 [log]
     decorate = short
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[difftool]
-	prompt = false
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustExitCode = true
-[mergetool]
-	prompt = false
