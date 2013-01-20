@@ -20,13 +20,16 @@ set laststatus=2
 set lazyredraw
 set noerrorbells
 set nostartofline
+set novisualbell
 set nowrap
 set number
 set ruler
 set shiftwidth=4
 set showcmd
 set softtabstop=4
+set t_vb=
 set tabstop=4
+set tm=500
 set ttyfast
 set whichwrap+=<
 set whichwrap+=>
