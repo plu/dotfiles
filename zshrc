@@ -35,3 +35,4 @@ plugins=(brew bundler cpanm gem git perl rails3 rvm)
 [[ -x $HOME/.dotfiles-secret/install.sh ]] && $HOME/.dotfiles-secret/install.sh
 source $ZSH/oh-my-zsh.sh
 source $HOME/.env.sh
+
