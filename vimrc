@@ -43,6 +43,7 @@ else
 endif
 
 let g:fugitive_github_domains = ['source.xing.com']
+let g:gitgutter_enabled = 1
 
 nmap <leader>a <Esc>:Ack!
 map <leader>n :NERDTreeToggle<CR>
@@ -53,6 +54,8 @@ map <leader>bn :NextBookmark<CR>
 map <leader>bp :PreviousBookmark<CR>
 map <leader>xs :!xing sandbox sync -c --no-color --app 
 map <leader>xr :!xing sandbox restart --no-color --app 
+map <leader>gn :GitGutterNextHunk<CR>
+map <leader>gp :GitGutterPrevHunk<CR>
 
 " Navigation between split windows
 map <c-j> <c-w>j
