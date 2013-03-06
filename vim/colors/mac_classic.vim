@@ -75,6 +75,7 @@ hi Visual  guibg=#C6DEFF ctermbg=189
 hi CursorLine  guibg=#e9e9e9 ctermbg=15
 hi CursorColumn  guibg=#F0F6FF ctermbg=15
 hi LineNr  guifg=#888888 ctermfg=244 guibg=#e9e9e9 ctermbg=7
+hi SignColumn  guifg=#888888 ctermfg=244 guibg=#ffffff ctermbg=15
 hi VertSplit  guifg=#FFFFFF ctermfg=15 guibg=#CFCFCF ctermbg=252 gui=NONE
 hi MatchParen  guifg=#1E39F6 ctermfg=27 guibg=NONE gui=bold
 hi Pmenu guibg=#EFEFEF ctermbg=7
