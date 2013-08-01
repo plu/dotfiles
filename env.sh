@@ -11,6 +11,8 @@ if [[ "$OS" == "Darwin" ]]; then
   export JAVA_HOME=/Library/Java/Home
   export LSOPTIONS='-G'
   export PATH=/usr/local/mysql/bin:/usr/local/bin:/usr/local/share/git/contrib:/opt/appengine-java-sdk/bin:$PATH
+  export IOS_SDK_VERSION=6.1
+  export DYLD_LIBRARY_PATH=/usr/local/mysql/lib
 elif [[ "$OS" == "Linux" ]]; then
   export LSOPTIONS='--color=auto'
 elif [[ "$OS" == "FreeBSD" ]]; then
