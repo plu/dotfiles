@@ -47,7 +47,7 @@ let g:gitgutter_enabled = 1
 
 nmap <leader>a <Esc>:Ack!
 map <leader>n :NERDTreeToggle<CR>
-map <leader>r :NERDTreeFind<CR>
+map <leader>j :NERDTreeFind<CR>
 map <leader>T :CommandTBuffer<CR>
 map <leader>ba :ToggleBookmark<CR>
 map <leader>bn :NextBookmark<CR>
