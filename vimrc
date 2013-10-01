@@ -34,12 +34,13 @@ set ttyfast
 set whichwrap+=<
 set whichwrap+=>
 set directory=/tmp
+set background=light
+
+colorscheme solarized
 
 if ! has("gui_running")
+  let g:solarized_termcolors=256
   set t_Co=256
-  colorscheme mac_classic
-else
-  colorscheme mac_classic
 endif
 
 let g:fugitive_github_domains = ['source.xing.com']
