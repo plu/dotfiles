@@ -65,13 +65,6 @@ map <c-h> <c-w>h
 
 cmap w!! w !sudo tee % >/dev/null
 
-" Highlight trailing whitespace
-match ExtraWhitespace /\s\+$/
-autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-autocmd BufWinLeave * call clearmatches()
-
 " Spaces
 autocmd Filetype html setlocal ts=2 sts=2 sw=2
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
@@ -160,3 +153,11 @@ else
   set autoindent		" always set autoindenting on
 
 endif " has("autocmd")
+
+" Highlight trailing whitespace
+exe 'highlight ExtraWhitespace ctermbg=red guibg=#ECE5B6'
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
