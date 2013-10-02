@@ -46,6 +46,7 @@ endif
 
 let g:fugitive_github_domains = ['source.xing.com']
 let g:gitgutter_enabled = 1
+let g:vroom_use_dispatch = 1
 
 nmap <leader>a <Esc>:Ag! 
 map <leader>n :NERDTreeToggle<CR>
