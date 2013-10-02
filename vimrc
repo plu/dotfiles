@@ -59,6 +59,7 @@ map <leader>xr :!xing sandbox restart --no-color --app
 map <leader>gn :GitGutterNextHunk<CR>
 map <leader>gp :GitGutterPrevHunk<CR>
 map <leader>u :GundoToggle<CR>
+map <leader>s :!zeus rspec spec<CR>
 
 " Navigation between split windows
 map <c-j> <c-w>j
