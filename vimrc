@@ -7,6 +7,7 @@ call pathogen#infect()
 " Do not clear sreen on exit.
 "set t_ti= t_te=
 
+set autoindent
 set backspace=indent,eol,start
 set browsedir=current
 set enc=utf-8
