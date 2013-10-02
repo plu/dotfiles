@@ -52,4 +52,5 @@ alias mountpb='hdiutil attach -nobrowse ~/Dropbox/Development/perlbrew.sparseima
 alias mutt='TERM=vt100 mutt'
 alias natsort="perl -MSort::Key::Natural=natsort -e '@s=<>; print for natsort @s'"
 alias noll='eval $(perl -Mlocal::lib='--deactivate-all')'
+alias tmux="tmux -2"
 alias umountpb='diskutil eject /Volumes/perlbrew'
