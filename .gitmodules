@@ -1,63 +1,6 @@
-[submodule "vim/bundle/nerdtree"]
-	path = vim/bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
-[submodule "vim/bundle/command-t"]
-	path = vim/bundle/command-t
-	url = git://git.wincent.com/command-t.git
-[submodule "vim/bundle/git"]
-	path = vim/bundle/git
-	url = https://github.com/tpope/vim-git.git
-[submodule "vim/bundle/fugitive"]
-	path = vim/bundle/fugitive
-	url = http://github.com/tpope/vim-fugitive.git
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = git://github.com/robbyrussell/oh-my-zsh.git
-[submodule "vim/bundle/vim-colors-solarized"]
-	path = vim/bundle/vim-colors-solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
-[submodule "vim/bundle/nerdcommenter"]
-	path = vim/bundle/nerdcommenter
-	url = git://github.com/scrooloose/nerdcommenter.git
-[submodule "vim/bundle/xterm-color-table"]
-	path = vim/bundle/xterm-color-table
-	url = git://github.com/guns/xterm-color-table.vim.git
-[submodule "vim/bundle/current-func-info"]
-	path = vim/bundle/current-func-info
-	url = git://github.com/tyru/current-func-info.vim.git
-[submodule "vim/bundle/vim-powerline"]
-	path = vim/bundle/vim-powerline
-	url = git://github.com/Lokaltog/vim-powerline.git
-[submodule "vim/bundle/vim-scala"]
-	path = vim/bundle/vim-scala
-	url = git://github.com/derekwyatt/vim-scala.git
-[submodule "vim/bundle/vim-gitgutter"]
-	path = vim/bundle/vim-gitgutter
-	url = git://github.com/airblade/vim-gitgutter.git
-[submodule "vim/bundle/vim-vroom"]
-	path = vim/bundle/vim-vroom
-	url = git://github.com/skalnik/vim-vroom.git
-[submodule "vim/bundle/ag"]
-	path = vim/bundle/ag
-	url = https://github.com/rking/ag.vim
-[submodule "vim/bundle/vim-endwise"]
-	path = vim/bundle/vim-endwise
-	url = git://github.com/tpope/vim-endwise.git
-[submodule "vim/bundle/vim-rails"]
-	path = vim/bundle/vim-rails
-	url = git://github.com/tpope/vim-rails.git
-[submodule "vim/bundle/vim-bundler"]
-	path = vim/bundle/vim-bundler
-	url = git://github.com/tpope/vim-bundler.git
-[submodule "vim/bundle/vim-surround"]
-	path = vim/bundle/vim-surround
-	url = git://github.com/tpope/vim-surround.git
-[submodule "vim/bundle/syntastic"]
-	path = vim/bundle/syntastic
-	url = https://github.com/scrooloose/syntastic.git
-[submodule "vim/bundle/gundo"]
-	path = vim/bundle/gundo
-	url = http://github.com/sjl/gundo.vim.git
-[submodule "vim/bundle/vim-dispatch"]
-	path = vim/bundle/vim-dispatch
-	url = git://github.com/tpope/vim-dispatch.git
+[submodule "vim/bundle/vundle"]
+	path = vim/bundle/vundle
+	url = https://github.com/gmarik/vundle.git
