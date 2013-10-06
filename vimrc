@@ -185,12 +185,9 @@ else
 endif " has("autocmd")
 
 " Highlight trailing whitespace
-exe 'highlight ExtraWhitespace ctermbg=red guibg=#ECE5B6'
-match ExtraWhitespace /\s\+$/
-autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-autocmd BufWinLeave * call clearmatches()
+set list
+set listchars=tab:\|\ ,trail:·
+hi SpecialKey ctermbg=244 ctermfg=124 guibg=244 guifg=124
 
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
