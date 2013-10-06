@@ -7,9 +7,9 @@ Bundle 'gmarik/vundle'
 
 let g:vundle_default_git_proto = 'git'
 
-Bundle 'Lokaltog/vim-powerline'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'bling/vim-airline'
 Bundle 'bundle/vim-gitgutter'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'rking/ag.vim'
