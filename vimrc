@@ -50,8 +50,10 @@ set laststatus=2
 set lazyredraw
 set list
 set listchars=tab:\|\ ,trail:·
+set nobackup
 set noerrorbells
 set nostartofline
+set noswapfile
 set novisualbell
 set nowrap
 set number
