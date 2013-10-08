@@ -1,0 +1,8 @@
+name: rz
+root: ./
+tmux_options: -2
+
+windows:
+  - vim: vim
+  - zeus: zeus start
+  - rails: zeus s
