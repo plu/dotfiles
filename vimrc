@@ -29,6 +29,7 @@ Bundle 'tpope/vim-git'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-rvm'
 Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-unimpaired'
 Bundle 'wincent/Command-T'
 
 filetype plugin indent on
