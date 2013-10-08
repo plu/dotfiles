@@ -5,4 +5,4 @@ tmux_options: -2
 windows:
   - vim: vim
   - zeus: zeus start
-  - rails: zeus s
+  - rails: sleep 10; zeus s
