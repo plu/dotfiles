@@ -7,9 +7,11 @@ Bundle 'gmarik/vundle'
 
 let g:vundle_default_git_proto = 'git'
 
+Bundle 'Keithbsmiley/rspec.vim'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'bling/vim-airline'
+Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'bundle/vim-gitgutter'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'rking/ag.vim'
@@ -28,7 +30,6 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-rvm'
 Bundle 'tpope/vim-surround'
 Bundle 'wincent/Command-T'
-Bundle 'bronson/vim-trailing-whitespace'
 
 filetype plugin indent on
 
@@ -82,7 +83,6 @@ map <leader>gn :GitGutterNextHunk<CR>
 map <leader>gp :GitGutterPrevHunk<CR>
 map <leader>j :NERDTreeFind<CR>
 map <leader>n :NERDTreeToggle<CR>
-map <leader>s :Dispatch zeus rspec spec<CR>
 map <leader>u :GundoToggle<CR>
 map <leader>ws :FixWhitespace<CR>
 map <leader>xr :!xing sandbox restart --no-color --app 
@@ -102,6 +102,7 @@ cmap w!! w !sudo tee % >/dev/null
 if has("autocmd")
     autocmd Filetype perl nmap <leader>pt :call DoTidy()<CR>
     autocmd Filetype perl vmap <leader>pt :Tidy<CR>
+    autocmd Filetype rspec nmap <leader>rr :Dispatch zeus rspec spec<CR>
 
     autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
     autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
