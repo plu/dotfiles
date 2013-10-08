@@ -87,9 +87,6 @@ map <leader>ws :FixWhitespace<CR>
 map <leader>xr :!xing sandbox restart --no-color --app 
 map <leader>xs :!xing sandbox sync -c --no-color --app 
 
-autocmd Filetype perl nmap <leader>pt :call DoTidy()<CR>
-autocmd Filetype perl vmap <leader>pt :Tidy<CR>
-
 " Navigation between split windows
 map <c-h> <c-w>h
 map <c-j> <c-w>j
@@ -101,26 +98,31 @@ map Q gq
 
 cmap w!! w !sudo tee % >/dev/null
 
-autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
-autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
-autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
-autocmd FileType text setlocal textwidth=78
-autocmd Filetype css setlocal ts=2 sts=2 sw=2
-autocmd Filetype eruby setlocal ts=2 sts=2 sw=2
-autocmd Filetype html setlocal ts=2 sts=2 sw=2
-autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
+if has("autocmd")
+    autocmd Filetype perl nmap <leader>pt :call DoTidy()<CR>
+    autocmd Filetype perl vmap <leader>pt :Tidy<CR>
 
-" Put these in an autocmd group, so that we can delete them easily.
-" When editing a file, always jump to the last known cursor position.
-" Don't do it when the position is invalid or when inside an event handler
-" (happens when dropping a file on gvim).
-augroup vimrcEx
-au!
-autocmd BufReadPost *
-    \ if line("'\"") > 0 && line("'\"") <= line("$") |
-    \   exe "normal g`\"" |
-    \ endif
-augroup END
+    autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
+    autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
+    autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
+    autocmd FileType text setlocal textwidth=78
+    autocmd Filetype css setlocal ts=2 sts=2 sw=2
+    autocmd Filetype eruby setlocal ts=2 sts=2 sw=2
+    autocmd Filetype html setlocal ts=2 sts=2 sw=2
+    autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
+
+    " Put these in an autocmd group, so that we can delete them easily.
+    " When editing a file, always jump to the last known cursor position.
+    " Don't do it when the position is invalid or when inside an event handler
+    " (happens when dropping a file on gvim).
+    augroup vimrcEx
+    au!
+    autocmd BufReadPost *
+        \ if line("'\"") > 0 && line("'\"") <= line("$") |
+        \   exe "normal g`\"" |
+        \ endif
+    augroup END
+end
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
