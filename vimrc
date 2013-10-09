@@ -103,7 +103,7 @@ cmap w!! w !sudo tee % >/dev/null
 if has("autocmd")
     autocmd Filetype perl nmap <leader>pt :call DoTidy()<CR>
     autocmd Filetype perl vmap <leader>pt :Tidy<CR>
-    autocmd Filetype rspec nmap <leader>rr :Dispatch zeus rspec spec<CR>
+    autocmd Filetype ruby,eruby,rspec nmap <leader>rr :Dispatch zeus rspec spec<CR>
 
     autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
     autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
