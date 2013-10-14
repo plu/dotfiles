@@ -14,6 +14,8 @@ Bundle 'bling/vim-airline'
 Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'bundle/vim-gitgutter'
 Bundle 'derekwyatt/vim-scala'
+Bundle 'rizzatti/dash.vim'
+Bundle 'rizzatti/funcoo.vim'
 Bundle 'rking/ag.vim'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
@@ -80,6 +82,7 @@ let g:vroom_use_dispatch = 1
 
 map <leader>T :CommandTBuffer<CR>
 map <leader>a <Esc>:Ag! 
+map <leader>d <Plug>DashSearch
 map <leader>gn :GitGutterNextHunk<CR>
 map <leader>gp :GitGutterPrevHunk<CR>
 map <leader>j :NERDTreeFind<CR>
