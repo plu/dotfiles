@@ -78,9 +78,11 @@ set whichwrap+=>
 colorscheme solarized
 syntax on
 
-let g:fugitive_github_domains = ['source.xing.com']
-let g:gitgutter_enabled = 1
-let g:vroom_use_dispatch = 1
+let NERDChristmasTree = 1
+let NERDTreeDirArrows = 1
+let fugitive_github_domains = ['source.xing.com']
+let gitgutter_enabled = 1
+let vroom_use_dispatch = 1
 
 map <leader>T :CommandTBuffer<CR>
 map <leader>a <Esc>:Ag! 
