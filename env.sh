@@ -37,6 +37,9 @@ export LC_ALL="en_US.UTF-8"
 export PAGER=less
 export PATH=$HOME/bin:$PATH:/usr/local/sbin:/usr/sbin:/sbin
 
+alias b='bundle'
+alias be='bundle exec'
+alias vbi='vim +BundleInstall +qall'
 alias diff='diff -Nuarbw'
 alias disablevnc='sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -deactivate -configure -access -off'
 alias enablevnc='sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate -configure -access -on -clientopts -setvnclegacy -vnclegacy yes -clientopts -setvncpw -vncpw mypasswd -restart -agent -privs -all'
