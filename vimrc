@@ -44,6 +44,7 @@ set autoindent
 set background=light
 set backspace=indent,eol,start
 set browsedir=current
+set clipboard=unnamed
 set directory=/tmp
 set enc=utf-8
 set expandtab
@@ -60,22 +61,30 @@ set nobackup
 set noerrorbells
 set nostartofline
 set noswapfile
+set notimeout
 set novisualbell
 set nowrap
+set nowritebackup
 set number
 set ruler
 set shiftwidth=4
 set showcmd
 set softtabstop=4
+set splitbelow
+set splitright
+set synmaxcol=256
 set t_vb=
 set tabstop=4
 set tm=500
+set ttimeout
+set ttimeoutlen=100
 set ttyfast
 set whichwrap+=<
 set whichwrap+=>
 
 colorscheme solarized
 syntax on
+syntax sync minlines=256
 
 let NERDChristmasTree = 1
 let NERDTreeDirArrows = 1
