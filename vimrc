@@ -101,8 +101,6 @@ map <leader>j :NERDTreeFind<CR>
 map <leader>n :NERDTreeToggle<CR>
 map <leader>u :GundoToggle<CR>
 map <leader>ws :FixWhitespace<CR>
-map <leader>xr :!xing sandbox restart --no-color --app 
-map <leader>xs :!xing sandbox sync -c --no-color --app 
 
 " Navigation between split windows
 map <c-h> <c-w>h
