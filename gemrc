@@ -5,6 +5,5 @@
 :sources:
 - http://gems.opscode.com
 - http://rubygems.org
-- http://gems.xing.com
 :update_sources: true
 :verbose: true
