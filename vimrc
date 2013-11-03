@@ -85,7 +85,6 @@ syntax sync minlines=256
 
 let NERDChristmasTree = 1
 let NERDTreeDirArrows = 1
-let fugitive_github_domains = ['source.xing.com']
 let gitgutter_enabled = 1
 let vroom_use_dispatch = 1
 
