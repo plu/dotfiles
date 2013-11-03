@@ -61,7 +61,6 @@ set nobackup
 set noerrorbells
 set nostartofline
 set noswapfile
-set notimeout
 set novisualbell
 set nowrap
 set nowritebackup
@@ -76,8 +75,6 @@ set synmaxcol=256
 set t_vb=
 set tabstop=4
 set tm=500
-set ttimeout
-set ttimeoutlen=100
 set ttyfast
 set whichwrap+=<
 set whichwrap+=>
