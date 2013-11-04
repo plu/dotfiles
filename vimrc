@@ -122,6 +122,7 @@ if has("autocmd")
     autocmd Filetype eruby setlocal ts=2 sts=2 sw=2
     autocmd Filetype html setlocal ts=2 sts=2 sw=2
     autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
+    autocmd Filetype gitcommit setlocal textwidth=72
 
     " Put these in an autocmd group, so that we can delete them easily.
     " When editing a file, always jump to the last known cursor position.
