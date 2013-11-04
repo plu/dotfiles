@@ -111,6 +111,9 @@ map Q gq
 cmap w!! w !sudo tee % >/dev/null
 
 if has("autocmd")
+    autocmd BufWritePre * :set binary | set noeol
+    autocmd BufWritePost * :set nobinary | set eol
+
     autocmd Filetype perl nmap <leader>pt :call DoTidy()<CR>
     autocmd Filetype perl vmap <leader>pt :Tidy<CR>
     autocmd Filetype ruby,eruby,rspec nmap <leader>rr :Dispatch zeus rspec spec<CR>
