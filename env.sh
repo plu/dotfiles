@@ -1,7 +1,6 @@
 which direnv >/dev/null && eval `direnv hook $0`
 export PERLBREW_HOME=/opt/perlbrew
 [[ -f "/opt/perlbrew/etc/bashrc" ]] && source /opt/perlbrew/etc/bashrc
-[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 [[ -f "$HOME/.dotfiles-secret/env.sh" ]] && source $HOME/.dotfiles-secret/env.sh
 
 OS=$(uname)
@@ -57,3 +56,5 @@ alias natsort="perl -MSort::Key::Natural=natsort -e '@s=<>; print for natsort @s
 alias noll='eval $(perl -Mlocal::lib='--deactivate-all')'
 alias tmux="tmux -2"
 alias umountpb='diskutil eject /Volumes/perlbrew'
+
+[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
