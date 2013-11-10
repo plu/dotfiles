@@ -46,7 +46,7 @@ set autoindent
 set background=light
 set backspace=indent,eol,start
 set browsedir=current
-set clipboard=unnamed
+set clipboard+=unnamed
 set directory=/tmp
 set enc=utf-8
 set expandtab
