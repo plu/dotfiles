@@ -1,0 +1,1 @@
+CompilerSet makeprg=testrbl\ -Itest
