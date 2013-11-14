@@ -101,6 +101,7 @@ map <leader>j :NERDTreeFind<CR>
 map <leader>n :NERDTreeToggle<CR>
 map <leader>u :GundoToggle<CR>
 map <leader>ws :FixWhitespace<CR>
+map <F1> :!clear<CR><CR>
 
 " Navigation between split windows
 map <c-h> <c-w>h
