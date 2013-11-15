@@ -120,7 +120,8 @@ if has("autocmd")
 
     autocmd Filetype perl nmap <leader>pt :call DoTidy()<CR>
     autocmd Filetype perl vmap <leader>pt :Tidy<CR>
-    autocmd Filetype ruby,eruby,rspec nmap <leader>rr :Dispatch zeus rspec spec<CR>
+    autocmd Filetype ruby,eruby nmap <leader>rr :Dispatch bundle exec rake test<CR>
+    autocmd Filetype ruby,eruby,rspec nmap <leader>rrr :Dispatch zeus rspec spec<CR>
 
     autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
     autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
