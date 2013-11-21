@@ -9,7 +9,7 @@ if [[ "$OS" == "Darwin" ]]; then
   export COPY_EXTENDED_ATTRIBUTES_DISABLE=true
   export JAVA_HOME=/Library/Java/Home
   export LSOPTIONS='-G'
-  export PATH=/opt/go_appengine_1.8.3:/usr/local/mysql/bin:/usr/local/bin:/usr/local/share/git/contrib:/opt/appengine-java-sdk/bin:$PATH
+  export PATH=/opt/go_appengine_1.8.3:/usr/local/mysql/bin:/usr/local/bin:/usr/local/share/git/contrib:/opt/appengine-java-sdk/bin:/Applications/VMware\ Fusion.app/Contents/Library:$PATH
   export IOS_SDK_VERSION=7.0
   export TEST_SCHEME=Smoke
   export DYLD_LIBRARY_PATH=/usr/local/mysql/lib
