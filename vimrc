@@ -128,7 +128,7 @@ if has("autocmd")
     autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
     autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
     autocmd FileType text setlocal textwidth=78
-    autocmd Filetype css,eruby,haml,html,ruby,yaml setlocal ts=2 sts=2 sw=2
+    autocmd Filetype css,eruby,haml,html,ruby,yaml,xml setlocal ts=2 sts=2 sw=2
     autocmd Filetype gitcommit setlocal textwidth=72
 
     " Put these in an autocmd group, so that we can delete them easily.
