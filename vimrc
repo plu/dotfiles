@@ -51,6 +51,7 @@ set clipboard+=unnamed
 set directory=/tmp
 set enc=utf-8
 set expandtab
+set foldmethod=manual
 set guicursor+=a:blinkon0
 set guifont=Monaco:h12
 set hidden
@@ -105,6 +106,7 @@ map <leader>u :GundoToggle<CR>
 map <leader>ws :FixWhitespace<CR>
 map <F1> :!clear<CR><CR>
 map <F2> :redraw!<CR>
+map <F3> :set nofoldenable<CR>
 
 " Navigation between split windows
 map <c-h> <c-w>h
