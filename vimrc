@@ -15,6 +15,7 @@ Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'bundle/vim-gitgutter'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'dgryski/vim-godef'
+Bundle 'kien/ctrlp.vim'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'rizzatti/dash.vim'
 Bundle 'rizzatti/funcoo.vim'
@@ -36,7 +37,6 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-rvm'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
-Bundle 'wincent/Command-T'
 
 filetype plugin indent on
 
@@ -99,13 +99,14 @@ let vroom_use_dispatch = 1
 let g:vroom_test_unit_command = 'testrbl -Itest '
 let g:vroom_detect_spec_helper = 1
 
-map <leader>T :CommandTBuffer<CR>
+map <leader>T :CtrlPBuffer<CR>
 map <leader>a <Esc>:Ag! 
 map <leader>d <Plug>DashSearch
 map <leader>gn :GitGutterNextHunk<CR>
 map <leader>gp :GitGutterPrevHunk<CR>
 map <leader>j :NERDTreeFind<CR>
 map <leader>n :NERDTreeToggle<CR>
+map <leader>t :CtrlP<CR>
 map <leader>u :GundoToggle<CR>
 map <leader>ws :FixWhitespace<CR>
 map <F1> :!clear<CR><CR>
