@@ -84,7 +84,11 @@ set ttyfast
 set whichwrap+=<
 set whichwrap+=>
 
-colorscheme solarized
+try
+    colorscheme solarized
+catch /^Vim\%((\a\+)\)\=:E185/
+endtry
+
 syntax on
 syntax sync minlines=256
 
