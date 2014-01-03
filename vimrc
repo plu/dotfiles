@@ -109,7 +109,7 @@ map <leader>n :NERDTreeToggle<CR>
 map <leader>t :CtrlP<CR>
 map <leader>u :GundoToggle<CR>
 map <leader>ws :FixWhitespace<CR>
-map <F1> :!clear<CR><CR>:redraw!<CR><CR>:GitGutterAll<CR>
+map <F1> :!clear<CR><CR>:redraw!<CR>:GitGutterAll<CR>
 map <F3> :set nofoldenable<CR>
 
 " Navigation between split windows
