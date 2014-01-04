@@ -9,7 +9,7 @@
 *.sw*
 *.swp
 *~.nib
-.DS_Store
+.agignore
 .DS_Store
 .llrc
 .tracker.json
