@@ -16,6 +16,7 @@
     sy = remote update
     staged = diff --cached
     resetns = !git stash save --keep-index && git stash drop
+    prunelocal = "!for branch in $(git branch --merged | grep -v develop); do git branch -d $branch; done"
     w = whatchanged
     dc = svn dcommit
     up = svn rebase --all
