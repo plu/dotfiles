@@ -94,10 +94,11 @@ syntax sync minlines=256
 
 let NERDChristmasTree = 1
 let NERDTreeDirArrows = 1
+let g:gitgutter_eager = 0
+let g:vroom_detect_spec_helper = 1
+let g:vroom_test_unit_command = 'testrbl -Itest '
 let gitgutter_enabled = 1
 let vroom_use_dispatch = 1
-let g:vroom_test_unit_command = 'testrbl -Itest '
-let g:vroom_detect_spec_helper = 1
 
 map <leader>T :CtrlPBuffer<CR>
 map <leader>a <Esc>:Ag! 
