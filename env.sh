@@ -3,6 +3,7 @@ export PERLBREW_HOME=/opt/perlbrew
 source /opt/perl5/etc/bashrc
 [[ -f "/opt/perlbrew/etc/bashrc" ]] && source /opt/perlbrew/etc/bashrc
 [[ -f "$HOME/.dotfiles-secret/env.sh" ]] && source $HOME/.dotfiles-secret/env.sh
+eval "$(pyenv init -)"
 
 OS=$(uname)
 if [[ "$OS" == "Darwin" ]]; then
