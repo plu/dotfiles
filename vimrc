@@ -98,6 +98,7 @@ let g:gitgutter_realtime = 0
 let g:vroom_detect_spec_helper = 1
 let g:vroom_test_unit_command = 'testrbl -Itest '
 let gitgutter_enabled = 1
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
 let vroom_use_dispatch = 1
 
 map <leader>T :CtrlPBuffer<CR>
@@ -110,7 +111,7 @@ map <leader>n :NERDTreeToggle<CR>
 map <leader>t :CtrlP<CR>
 map <leader>u :GundoToggle<CR>
 map <leader>ws :FixWhitespace<CR>
-map <F1> :!clear<CR><CR>:redraw!<CR>:GitGutterAll<CR>
+map <F1> :!clear<CR><CR>:redraw!<CR>:GitGutterAll<CR>:SyntasticCheck<CR>
 map <F3> :set nofoldenable<CR>
 
 " Navigation between split windows
