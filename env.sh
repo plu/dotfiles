@@ -1,7 +1,7 @@
 which direnv >/dev/null && eval `direnv hook $0`
-export PERLBREW_HOME=/opt/perlbrew
+export PERLBREW_HOME=/opt/perl5
 source /opt/perl5/etc/bashrc
-[[ -f "/opt/perlbrew/etc/bashrc" ]] && source /opt/perlbrew/etc/bashrc
+[[ -f "/opt/perl5/etc/bashrc" ]] && source /opt/perl5/etc/bashrc
 [[ -f "$HOME/.dotfiles-secret/env.sh" ]] && source $HOME/.dotfiles-secret/env.sh
 eval "$(pyenv init -)"
 
