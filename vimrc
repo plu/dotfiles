@@ -60,6 +60,7 @@ set laststatus=2
 set lazyredraw
 set list
 set listchars=tab:\|\ ,trail:·
+set mouse=a
 set nobackup
 set noerrorbells
 set nofoldenable
@@ -80,6 +81,7 @@ set t_vb=
 set tabstop=4
 set tm=500
 set ttyfast
+set ttymouse=xterm
 set whichwrap+=<
 set whichwrap+=>
 
