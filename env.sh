@@ -2,7 +2,7 @@ which direnv >/dev/null && eval `direnv hook $0`
 export PERLBREW_HOME=/opt/perl5
 [[ -f "/opt/perl5/etc/bashrc" ]] && source /opt/perl5/etc/bashrc
 [[ -f "$HOME/.dotfiles-secret/env.sh" ]] && source $HOME/.dotfiles-secret/env.sh
-which -s pyenv && eval "$(pyenv init -)"
+which pyenv >/dev/null && eval "$(pyenv init -)"
 
 OS=$(uname)
 if [[ "$OS" == "Darwin" ]]; then
