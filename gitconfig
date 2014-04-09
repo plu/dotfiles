@@ -20,6 +20,7 @@
     dc = svn dcommit
     up = svn rebase --all
     wtf = !git-wtf
+    cfgmail = config user.email
 [core]
     excludesfile = ~/.gitignore-global
     pager = less -FXRS -x4
