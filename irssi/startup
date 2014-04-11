@@ -1,3 +1,4 @@
 script load ~/.irssi/scripts/go.pl
 script load ~/.irssi/scripts/query_close.pl
 script load ~/.irssi/scripts/screen_away.pl
+script load ~/.irssi/scripts/tmux_away.pl
