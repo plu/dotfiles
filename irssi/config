@@ -14,13 +14,18 @@ servers = (
     autoconnect = "yes";
     use_ssl = "yes";
     ssl_verify = "no";
+  },
+  {
+    address = "localhost";
+    chatnet = "bitlbee";
+    port = "6667";
+    autoconnect = "yes";
+    use_ssl = "no";
+    ssl_verify = "no";
   }
 );
 
-chatnets = {
-  pilgerer = { type = "IRC"; };
-  freenode = { type = "IRC"; };
-};
+chatnets = { pilgerer = { type = "IRC"; }; freenode = { type = "IRC"; }; bitlbee = { type = "IRC"; }; };
 
 channels = (
   { name = "#osm"; chatnet = "pilgerer"; autojoin = "yes"; },
@@ -33,7 +38,7 @@ channels = (
   { name = "#RestKit"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#smorch"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#xing_ios_dev"; chatnet = "freenode"; autojoin = "yes"; }
-)
+);
 
 aliases = {
   J = "join";
@@ -223,7 +228,7 @@ settings = {
     autoclose_windows = "no";
   };
   "fe-text" = {
-    colors = "yes";
+    colors = "no";
     autostick_split_windows = "yes";
     actlist_sort = "refnum";
   };
@@ -258,7 +263,7 @@ hilights = (
     word = "yes";
     regexp = "yes";
   },
-  {
+  { 
     text = "^plu[^a-Z0-9:@]";
     nick = "yes";
     word = "yes";
