@@ -2,5 +2,5 @@
 # Importing the script below will make the 'ql' and 'qlf' available to you in LLDB.
 # IMPORTANT: Update the path to the script depending on where you decide place it.
 
-command script import ~/Library/lldbScripts/lldb_quick_look.py
+command script import /usr/local/Cellar/chisel/1.1.0/libexec/fblldb.py
 command alias ql quicklook
