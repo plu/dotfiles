@@ -25,7 +25,18 @@ servers = (
   }
 );
 
-chatnets = { pilgerer = { type = "IRC"; }; freenode = { type = "IRC"; }; bitlbee = { type = "IRC"; }; };
+chatnets = {
+  pilgerer = {
+    type = "IRC";
+  };
+  freenode = {
+    type = "IRC";
+  };
+  bitlbee = {
+    autosendcmd = "/^msg -bitlbee &bitlbee identify password";
+    type = "IRC";
+  };
+};
 
 channels = (
   { name = "#osm"; chatnet = "pilgerer"; autojoin = "yes"; },
