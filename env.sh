@@ -11,7 +11,7 @@ if [[ "$OS" == "Darwin" ]]; then
   export JAVA_HOME=/Library/Java/Home
   export LSOPTIONS='-G'
   export PATH=/usr/local/heroku/bin:/opt/go_appengine:/usr/local/mysql/bin:/usr/local/bin:/usr/local/share/git/contrib:/opt/appengine-java-sdk/bin:/Applications/VMware\ Fusion.app/Contents/Library:$PATH
-  export PATH=/Applications/android-sdk-macos/sdk/platform-tools:/Applications/android-sdk-macos/sdk/tools:$PATH
+  export PATH=/Applications/android-sdk-macos/sdk/platform-tools:/Applications/android-sdk-macos/sdk/tools:/usr/local/packer:$PATH
   export IOS_SDK_VERSION=7.0
   export TEST_SCHEME=Smoke
   export DYLD_LIBRARY_PATH=/usr/local/mysql/lib
