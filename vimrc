@@ -131,6 +131,7 @@ if has("autocmd")
     autocmd! BufRead,BufNewFile *.god set filetype=ruby
     autocmd! BufRead,BufNewFile Vagrantfile set filetype=ruby
     autocmd! BufRead,BufNewFile Podfile set filetype=ruby
+    autocmd! BufRead,BufNewFile *.podspec set filetype=ruby
 
     autocmd Filetype perl nmap <leader>pt :call DoTidy()<CR>
     autocmd Filetype perl vmap <leader>pt :Tidy<CR>
