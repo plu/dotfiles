@@ -11,6 +11,7 @@
 *~.nib
 .agignore
 .DS_Store
+.envrc
 .llrc
 .tracker.json
 MANIFEST
