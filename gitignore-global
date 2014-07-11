@@ -14,9 +14,8 @@
 .envrc
 .llrc
 .tracker.json
-MANIFEST
-META.yml
-build/
-inc
-xcuserdata
-xing-admins.kdb.lock
+/MANIFEST
+/META.yml
+/build
+/inc
+/xcuserdata
