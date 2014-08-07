@@ -4,6 +4,8 @@ export PERLBREW_HOME=/opt/perl5
 [[ -f "$HOME/.dotfiles-secret/env.sh" ]] && source $HOME/.dotfiles-secret/env.sh
 which pyenv >/dev/null && eval "$(pyenv init -)"
 
+test "$SSH_AUTH_SOCK" && ln -sf $SSH_AUTH_SOCK ~/.ssh/ssh_auth_sock
+
 OS=$(uname)
 if [[ "$OS" == "Darwin" ]]; then
   export COPYFILE_DISABLE=true
