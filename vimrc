@@ -26,6 +26,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'sjl/gundo.vim'
 Plugin 'skalnik/vim-vroom'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'thoughtbot/vim-rspec'
 Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-endwise'
@@ -36,6 +37,7 @@ Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-rvm'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'vim-ruby/vim-ruby'
 
 filetype plugin indent on
 
@@ -96,12 +98,14 @@ syntax sync minlines=256
 let NERDChristmasTree = 1
 let NERDTreeDirArrows = 1
 let g:gitgutter_eager = 0
+let g:gitgutter_enabled = 1
 let g:gitgutter_realtime = 0
-let g:vroom_detect_spec_helper = 1
-let g:vroom_test_unit_command = 'testrbl -Itest '
-let gitgutter_enabled = 1
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
-let vroom_use_dispatch = 1
+let g:vroom_detect_spec_helper = 1
+let g:vroom_use_binstubs = 1
+let g:vroom_use_colors = 0
+let g:vroom_use_dispatch = 1
+let g:vroom_use_spring = 1
 
 map <leader>T :CtrlPBuffer<CR>
 map <leader>a <Esc>:Ag! 
@@ -135,8 +139,7 @@ if has("autocmd")
 
     autocmd Filetype perl nmap <leader>pt :call DoTidy()<CR>
     autocmd Filetype perl vmap <leader>pt :Tidy<CR>
-    autocmd Filetype ruby,eruby nmap <leader>rr :Dispatch bundle exec rake test<CR>
-    autocmd Filetype ruby,eruby,rspec nmap <leader>rrr :Dispatch zeus rspec spec<CR>
+    autocmd Filetype ruby,eruby,rspec nmap <leader>rr :Dispatch spring rspec spec<CR>
 
     autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
     autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
