@@ -19,6 +19,7 @@ if [[ "$OS" == "Darwin" ]]; then
   export IOS_SDK_VERSION=7.0
   export TEST_SCHEME=Smoke
   export DYLD_LIBRARY_PATH=/usr/local/mysql/lib
+  export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.7.1.0/libexec"
 elif [[ "$OS" == "Linux" ]]; then
   export LSOPTIONS='--color=auto'
 elif [[ "$OS" == "FreeBSD" ]]; then
