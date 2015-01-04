@@ -48,7 +48,6 @@ channels = (
   { name = "#jolokia"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#RestKit"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#smorch"; chatnet = "freenode"; autojoin = "yes"; },
-  { name = "#xing_ios_dev"; chatnet = "freenode"; autojoin = "yes"; }
 );
 
 aliases = {
