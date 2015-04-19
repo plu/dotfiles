@@ -16,6 +16,14 @@ servers = (
     ssl_verify = "no";
   },
   {
+    address = "irc.perl.org";
+    chatnet = "perl";
+    port = "6667";
+    autoconnect = "yes";
+    use_ssl = "no";
+    ssl_verify = "no";
+  },
+  {
     address = "localhost";
     chatnet = "bitlbee";
     port = "6667";
@@ -48,6 +56,7 @@ channels = (
   { name = "#jolokia"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#RestKit"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#smorch"; chatnet = "freenode"; autojoin = "yes"; },
+  { name = "#metacpan"; chatnet = "perl"; autojoin = "yes"; },
 );
 
 aliases = {
