@@ -12,7 +12,7 @@ if [[ "$OS" == "Darwin" ]]; then
   export COPY_EXTENDED_ATTRIBUTES_DISABLE=true
   export JAVA_HOME=/Library/Java/Home
   export LSOPTIONS='-G'
-  export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
+  export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
   export PATH=/usr/local/heroku/bin:/opt/go_appengine:/usr/local/mysql/bin:/usr/local/bin:/usr/local/share/git/contrib:/opt/appengine-java-sdk/bin:/Applications/VMware\ Fusion.app/Contents/Library:$PATH
   export PATH=/Applications/android-sdk-macos/sdk/platform-tools:/Applications/android-sdk-macos/sdk/tools:/usr/local/packer:$PATH
   export PATH=$JAVA_HOME/bin:$PATH
