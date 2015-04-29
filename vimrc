@@ -38,6 +38,7 @@ Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-rvm'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'fatih/vim-go'
 Plugin 'vim-ruby/vim-ruby'
 
 filetype plugin indent on
