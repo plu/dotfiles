@@ -19,6 +19,7 @@ if [[ "$OS" == "Darwin" ]]; then
   export PATH=/Applications/android-sdk-macos/sdk/platform-tools:/Applications/android-sdk-macos/sdk/tools:/usr/local/packer:$PATH
   export PATH=$JAVA_HOME/bin:$PATH
   export PATH=$GO_HOME/bin:$PATH
+  export PATH=$GO_PATH/bin:$PATH
   export PATH=/opt/play:$PATH
   export IOS_SDK_VERSION=7.0
   export TEST_SCHEME=Smoke
