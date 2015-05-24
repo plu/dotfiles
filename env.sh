@@ -14,12 +14,12 @@ if [[ "$OS" == "Darwin" ]]; then
   export LSOPTIONS='-G'
   export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
   export GO_HOME=/usr/local/go
-  export GO_PATH=~/Development/go
+  export GOPATH=~/Development/go
   export PATH=/usr/local/heroku/bin:/opt/go_appengine:/usr/local/mysql/bin:/usr/local/bin:/usr/local/share/git/contrib:/opt/appengine-java-sdk/bin:/Applications/VMware\ Fusion.app/Contents/Library:$PATH
   export PATH=/Applications/android-sdk-macos/sdk/platform-tools:/Applications/android-sdk-macos/sdk/tools:/usr/local/packer:$PATH
   export PATH=$JAVA_HOME/bin:$PATH
   export PATH=$GO_HOME/bin:$PATH
-  export PATH=$GO_PATH/bin:$PATH
+  export PATH=$GOPATH/bin:$PATH
   export PATH=/opt/play:$PATH
   export IOS_SDK_VERSION=7.0
   export TEST_SCHEME=Smoke
