@@ -121,6 +121,7 @@ map <leader>t :CtrlP<CR>
 map <leader>u :GundoToggle<CR>
 map <leader>ws :FixWhitespace<CR>
 map <F1> :!clear<CR><CR>:redraw!<CR>:GitGutterAll<CR>:SyntasticCheck<CR>
+map <F2> :VimuxRunLastCommand<CR>
 map <F3> :set nofoldenable<CR>
 
 " Navigation between split windows
