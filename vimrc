@@ -142,6 +142,7 @@ if has("autocmd")
     autocmd Filetype perl nmap <leader>pt :call DoTidy()<CR>
     autocmd Filetype perl vmap <leader>pt :Tidy<CR>
     autocmd Filetype ruby,eruby,rspec nmap <leader>rr :Dispatch spring rspec spec<CR>
+    autocmd Filetype go nmap <leader>r :GoRun<CR>
 
     autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
     autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
