@@ -62,8 +62,8 @@ set history=5000
 set incsearch
 set laststatus=2
 set lazyredraw
-set list
-set listchars=tab:\|\ ,trail:·
+"set list
+"set listchars=tab:\|\ ,trail:·
 set mouse=a
 set nobackup
 set noerrorbells
