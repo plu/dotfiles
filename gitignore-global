@@ -6,7 +6,7 @@
 *.perspectivev3
 *.pyc
 *.so
-*.sw*
+*.sw
 *.swp
 *~.nib
 .agignore
