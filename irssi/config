@@ -34,12 +34,8 @@ servers = (
 );
 
 chatnets = {
-  pilgerer = {
-    type = "IRC";
-  };
-  freenode = {
-    type = "IRC";
-  };
+  pilgerer = { type = "IRC"; };
+  freenode = { type = "IRC"; };
   bitlbee = {
     autosendcmd = "/^msg -bitlbee &bitlbee identify password";
     type = "IRC";
@@ -56,7 +52,7 @@ channels = (
   { name = "#jolokia"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#RestKit"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#smorch"; chatnet = "freenode"; autojoin = "yes"; },
-  { name = "#metacpan"; chatnet = "perl"; autojoin = "yes"; },
+  { name = "#metacpan"; chatnet = "perl"; autojoin = "yes"; }
 );
 
 aliases = {
@@ -245,6 +241,7 @@ settings = {
     autolog = "no";
     emphasis_multiword = "yes";
     autoclose_windows = "no";
+    activity_hide_level = "QUITS JOINS PARTS KICKS MODES TOPIC NICKS";
   };
   "fe-text" = {
     colors = "no";
