@@ -40,6 +40,7 @@ chatnets = {
     autosendcmd = "/^msg -bitlbee &bitlbee identify password";
     type = "IRC";
   };
+  perl = { type = "IRC"; };
 };
 
 channels = (
@@ -252,6 +253,7 @@ settings = {
   "perl/core/scripts" = {
     screen_away_message = "not here - screen detached";
   };
+  "irc/core" = { cmd_queue_speed = "1msec"; };
 };
 
 logs = { };
@@ -319,3 +321,61 @@ completions = {
   "/ " = { value = "/"; auto = "yes"; };
   o = { value = "oida"; auto = "no"; };
 };
+windows = {
+  1 = { 
+    immortal = "yes";
+    name = "(msgs)";
+    level = "MSGS ACTIONS DCCMSGS";
+  };
+  2 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "&bitlbee";
+        tag = "bitlbee";
+      }
+    );
+  };
+  3 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#osm";
+        tag = "pilgerer";
+      }
+    );
+  };
+  4 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#laboheme";
+        tag = "pilgerer";
+      }
+    );
+  };
+  5 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#smorch";
+        tag = "freenode";
+      }
+    );
+  };
+  6 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#jolokia";
+        tag = "freenode";
+      }
+    );
+  };
+};
+mainwindows = { 2 = { first_line = "1"; lines = "37"; }; };
