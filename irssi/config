@@ -46,14 +46,8 @@ chatnets = {
 channels = (
   { name = "#osm"; chatnet = "pilgerer"; autojoin = "yes"; },
   { name = "#laboheme"; chatnet = "pilgerer"; autojoin = "yes"; },
-  { name = "#cocoapods"; chatnet = "freenode"; autojoin = "yes"; },
-  { name = "#gearman"; chatnet = "freenode"; autojoin = "yes"; },
-  { name = "#graylog2"; chatnet = "freenode"; autojoin = "yes"; },
-  { name = "#hangops"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#jolokia"; chatnet = "freenode"; autojoin = "yes"; },
-  { name = "#RestKit"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#smorch"; chatnet = "freenode"; autojoin = "yes"; },
-  { name = "#metacpan"; chatnet = "perl"; autojoin = "yes"; }
 );
 
 aliases = {
