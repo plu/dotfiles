@@ -46,7 +46,7 @@ export HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S "
 export LC_ALL="en_US.UTF-8"
 export PAGER=less
 export PATH=$HOME/bin:$PATH:/usr/local/sbin:/usr/sbin:/sbin
-export TZ=Europe/Berlin
+export TZ=Asia/Dubai
 
 alias b='bundle'
 alias be='bundle exec'
