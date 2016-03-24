@@ -31,6 +31,12 @@ elif [[ "$OS" == "FreeBSD" ]]; then
   export LSCOLORS="Exfxcxdxbxegedabagacad"
 fi
 
+function ksdiff {
+  result=$(mktemp).png
+  compare $1 $2 $result
+  open $result
+}
+
 if [[ $TERM == "xterm-color" ]]; then
     export TERM="xterm"
 fi
