@@ -34,6 +34,8 @@ fi
 function ksdiff {
   result=$(mktemp).png
   compare $1 $2 $result
+  open $1
+  open $2
   open $result
 }
 
