@@ -1,4 +1,3 @@
-which direnv >/dev/null && eval `direnv hook $0`
 export PERLBREW_HOME=/opt/perl5
 [[ -f "/opt/perl5/etc/bashrc" ]] && source /opt/perl5/etc/bashrc
 [[ -f "$HOME/.env-secret.sh" ]] && source $HOME/.env-secret.sh
@@ -80,3 +79,5 @@ alias umountpb='diskutil eject /Volumes/perlbrew'
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 [[ -f '/opt/google-cloud-sdk/path.bash.inc' ]] && source '/opt/google-cloud-sdk/path.bash.inc'
 [[ -f '/opt/google-cloud-sdk/completion.bash.inc' ]] && source '/opt/google-cloud-sdk/completion.bash.inc'
+which direnv >/dev/null && eval `direnv hook $0`
+
