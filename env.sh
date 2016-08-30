@@ -1,7 +1,6 @@
 export PERLBREW_HOME=/opt/perl5
 [[ -f "/opt/perl5/etc/bashrc" ]] && source /opt/perl5/etc/bashrc
 [[ -f "$HOME/.env-secret.sh" ]] && source $HOME/.env-secret.sh
-which pyenv >/dev/null && eval "$(pyenv init -)"
 
 test "$SSH_AUTH_SOCK" && ln -sf $SSH_AUTH_SOCK ~/.ssh/ssh_auth_sock
 
@@ -80,4 +79,5 @@ alias umountpb='diskutil eject /Volumes/perlbrew'
 [[ -f '/opt/google-cloud-sdk/path.bash.inc' ]] && source '/opt/google-cloud-sdk/path.bash.inc'
 [[ -f '/opt/google-cloud-sdk/completion.bash.inc' ]] && source '/opt/google-cloud-sdk/completion.bash.inc'
 which direnv >/dev/null && eval `direnv hook $0`
+which pyenv >/dev/null && eval "$(pyenv init -)"
 
