@@ -75,9 +75,8 @@ alias noll='eval $(perl -Mlocal::lib='--deactivate-all')'
 alias tmux="tmux -2"
 alias umountpb='diskutil eject /Volumes/perlbrew'
 
-[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 [[ -f '/opt/google-cloud-sdk/path.bash.inc' ]] && source '/opt/google-cloud-sdk/path.bash.inc'
 [[ -f '/opt/google-cloud-sdk/completion.bash.inc' ]] && source '/opt/google-cloud-sdk/completion.bash.inc'
 which direnv >/dev/null && eval `direnv hook $0`
 which pyenv >/dev/null && eval "$(pyenv init -)"
-
+[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
