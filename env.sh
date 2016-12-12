@@ -8,19 +8,24 @@ OS=$(uname)
 if [[ "$OS" == "Darwin" ]]; then
   export COPYFILE_DISABLE=true
   export COPY_EXTENDED_ATTRIBUTES_DISABLE=true
-  export JAVA_HOME=/Library/Java/Home
-  export LSOPTIONS='-G'
-  export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
-  export GO_HOME=/usr/local/go
   export GOPATH=~/Development/go
-  export PATH=/usr/local/heroku/bin:/opt/go_appengine:/usr/local/mysql/bin:/usr/local/bin:/usr/local/share/git/contrib:/opt/appengine-java-sdk/bin:/Applications/VMware\ Fusion.app/Contents/Library:$PATH
-  export PATH=/Applications/android-sdk-macos/sdk/platform-tools:/Applications/android-sdk-macos/sdk/tools:/usr/local/packer:$PATH
-  export PATH=$JAVA_HOME/bin:$PATH
-  export PATH=$GO_HOME/bin:$PATH
+  export GO_HOME=/usr/local/go
+  export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+  export LSOPTIONS='-G'
   export PATH=$GOPATH/bin:$PATH
+  export PATH=$GO_HOME/bin:$PATH
+  export PATH=$JAVA_HOME/bin:$PATH
+  export PATH=/Applications/VMware\ Fusion.app/Contents/Library:$PATH
+  export PATH=/Applications/android-sdk-macos/sdk/platform-tools:$PATH
+  export PATH=/Applications/android-sdk-macos/sdk/tools:$PATH
+  export PATH=/opt/appengine-java-sdk/bin:$PATH
+  export PATH=/opt/go_appengine:$PATH
   export PATH=/opt/play:$PATH
-  export IOS_SDK_VERSION=7.0
-  export TEST_SCHEME=Smoke
+  export PATH=/usr/local/bin:$PATH
+  export PATH=/usr/local/heroku/bin:$PATH
+  export PATH=/usr/local/mysql/bin:$PATH
+  export PATH=/usr/local/packer:$PATH
+  export PATH=/usr/local/share/git/contrib:$PATH
 elif [[ "$OS" == "Linux" ]]; then
   export LSOPTIONS='--color=auto'
 elif [[ "$OS" == "FreeBSD" ]]; then
@@ -46,15 +51,13 @@ unset LSCOLORS
 unset LC_ALL
 export EDITOR=vim
 export HISTCONTROL=ignoreboth
-export HISTSIZE=10000000000
+export HISTSIZE=100000
 export HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S "
 export LC_ALL="en_US.UTF-8"
 export PAGER=less
-export PATH=$HOME/bin:$PATH:/usr/local/sbin:/usr/sbin:/sbin
+export PATH=$HOME/bin:$PATH
 export TZ=Asia/Dubai
 
-alias b='bundle'
-alias be='bundle exec'
 alias vbi='vim +BundleInstall +qall'
 alias diff='diff -Nuarbw'
 alias disablevnc='sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -deactivate -configure -access -off'
@@ -66,14 +69,8 @@ alias kdd='rm -rf ~/Library/Developer/Xcode/DerivedData/*'
 alias l='ls $LSOPTIONS -l'
 alias ll='ls $LSOPTIONS -lA'
 alias ls='ls $LSOPTIONS'
-alias mate=vim
-alias mvim=vim
-alias mountpb='hdiutil attach -nobrowse ~/Dropbox/Development/perlbrew.sparseimage'
 alias mutt='TERM=vt100 mutt'
-alias natsort="perl -MSort::Key::Natural=natsort -e '@s=<>; print for natsort @s'"
-alias noll='eval $(perl -Mlocal::lib='--deactivate-all')'
 alias tmux="tmux -2"
-alias umountpb='diskutil eject /Volumes/perlbrew'
 
 [[ -f '/opt/google-cloud-sdk/path.bash.inc' ]] && source '/opt/google-cloud-sdk/path.bash.inc'
 [[ -f '/opt/google-cloud-sdk/completion.bash.inc' ]] && source '/opt/google-cloud-sdk/completion.bash.inc'
