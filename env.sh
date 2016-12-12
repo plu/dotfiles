@@ -63,6 +63,7 @@ alias enablevnc='sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app
 alias flushdns='sudo discoveryutil udnsflushcaches; dscacheutil -flushcache'
 alias gti='git'
 alias kaj='jobs -l | awk '\''{print $2}'\'' | xargs kill -9'
+alias kdd='rm -rf ~/Library/Developer/Xcode/DerivedData/*'
 alias l='ls $LSOPTIONS -l'
 alias ll='ls $LSOPTIONS -lA'
 alias ls='ls $LSOPTIONS'
