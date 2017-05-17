@@ -5,4 +5,5 @@
 source $HOME/.git.sh
 source $HOME/.git-completion.sh
 source $HOME/.env.sh
+source $HOME/.history.sh
 export PS1='\u@\h \w$(parse_git_branch)\$ '
