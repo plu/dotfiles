@@ -26,6 +26,7 @@ if [[ "$OS" == "Darwin" ]]; then
   export PATH=/usr/local/mysql/bin:$PATH
   export PATH=/usr/local/packer:$PATH
   export PATH=/usr/local/share/git/contrib:$PATH
+  export PATH=/usr/local/bin/Sencha/Cmd:$PATH
 elif [[ "$OS" == "Linux" ]]; then
   export LSOPTIONS='--color=auto'
 elif [[ "$OS" == "FreeBSD" ]]; then
