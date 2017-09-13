@@ -29,6 +29,8 @@ if [[ "$OS" == "Darwin" ]]; then
   export PATH=/usr/local/bin/Sencha/Cmd:$PATH
 elif [[ "$OS" == "Linux" ]]; then
   export LSOPTIONS='--color=auto'
+  export SWIFT_ROOT=/opt/swift
+  export PATH=$SWIFT_ROOT/usr/bin:$PATH
 elif [[ "$OS" == "FreeBSD" ]]; then
   export LSOPTIONS='-G'
   export LSCOLORS="Exfxcxdxbxegedabagacad"
