@@ -59,7 +59,7 @@ export HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S "
 export LC_ALL="en_US.UTF-8"
 export PAGER=less
 export PATH=$HOME/bin:$PATH
-export TZ=Asia/Dubai
+export TZ=Europe/Bucharest
 
 alias vbi='vim +BundleInstall +qall'
 alias diff='diff -Nuarbw'
