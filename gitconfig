@@ -24,7 +24,7 @@
     cfgmail = config user.email
     pr  = "!f() { git fetch -fu ${2:-origin} refs/pull/$1/head:pr/$1 && git checkout pr/$1; }; f"
     pr-clean = "!git for-each-ref refs/heads/pr/* --format='%(refname)' | while read ref ; do branch=${ref#refs/heads/} ; git branch -D $branch ; done"
-    bdm = "!git branch --merged | egrep -v '(^\\*|master)' | xargs git branch -d"
+    bdm = "!git branch --merged | egrep -v '(^\\*|master|develop)' | xargs git branch -d"
 [core]
     excludesfile = ~/.gitignore-global
     pager = less -FXRS -x4
