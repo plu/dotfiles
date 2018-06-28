@@ -9,7 +9,6 @@ if [[ "$OS" == "Darwin" ]]; then
   export COPYFILE_DISABLE=true
   export COPY_EXTENDED_ATTRIBUTES_DISABLE=true
   export GOPATH=~/Development/go
-  export GO_HOME=/usr/local/go
   export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
   export LSOPTIONS='-G'
   export PATH=$GOPATH/bin:$PATH
@@ -74,9 +73,7 @@ alias ll='ls $LSOPTIONS -lA'
 alias ls='ls $LSOPTIONS'
 alias mutt='TERM=vt100 mutt'
 alias tmux="tmux -2"
-
-[[ -f '/opt/google-cloud-sdk/path.bash.inc' ]] && source '/opt/google-cloud-sdk/path.bash.inc'
-[[ -f '/opt/google-cloud-sdk/completion.bash.inc' ]] && source '/opt/google-cloud-sdk/completion.bash.inc'
+[[ -f '/opt/google-cloud-sdk/path.bash.inc' ]] && source '/opt/google-cloud-sdk/path.bash.inc' [[ -f '/opt/google-cloud-sdk/completion.bash.inc' ]] && source '/opt/google-cloud-sdk/completion.bash.inc'
 which direnv >/dev/null && eval `direnv hook $0`
 which pyenv >/dev/null && eval "$(pyenv init -)"
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
