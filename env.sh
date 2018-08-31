@@ -51,6 +51,7 @@ unset LANG
 unset LC_CTYPE
 unset LSCOLORS
 unset LC_ALL
+export BAT_THEME=GitHub
 export EDITOR=vim
 export HISTCONTROL=ignoreboth
 export HISTSIZE=100000
