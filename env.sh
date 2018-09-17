@@ -26,6 +26,7 @@ if [[ "$OS" == "Darwin" ]]; then
   export PATH=/usr/local/packer:$PATH
   export PATH=/usr/local/share/git/contrib:$PATH
   export PATH=/usr/local/bin/Sencha/Cmd:$PATH
+  export PATH=$PATH:/usr/local/opt/go/libexec/bin
 elif [[ "$OS" == "Linux" ]]; then
   export LSOPTIONS='--color=auto'
   export SWIFT_ROOT=/opt/swift
