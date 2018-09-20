@@ -16,14 +16,6 @@ servers = (
     ssl_verify = "no";
   },
   {
-    address = "irc.perl.org";
-    chatnet = "perl";
-    port = "6667";
-    autoconnect = "yes";
-    use_ssl = "no";
-    ssl_verify = "no";
-  },
-  {
     address = "localhost";
     chatnet = "bitlbee";
     port = "6667";
@@ -40,7 +32,6 @@ chatnets = {
     autosendcmd = "/^msg -bitlbee &bitlbee identify password";
     type = "IRC";
   };
-  perl = { type = "IRC"; };
 };
 
 channels = (
