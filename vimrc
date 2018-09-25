@@ -103,6 +103,7 @@ let NERDTreeDirArrows = 1
 let g:gitgutter_eager = 0
 let g:gitgutter_enabled = 1
 let g:gitgutter_realtime = 0
+let g:go_version_warning = 0
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
 let g:vroom_detect_spec_helper = 1
 let g:vroom_use_binstubs = 1
