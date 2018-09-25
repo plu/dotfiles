@@ -14,24 +14,12 @@ servers = (
     autoconnect = "yes";
     use_ssl = "yes";
     ssl_verify = "no";
-  },
-  {
-    address = "localhost";
-    chatnet = "bitlbee";
-    port = "6667";
-    autoconnect = "yes";
-    use_ssl = "no";
-    ssl_verify = "no";
   }
 );
 
 chatnets = {
   pilgerer = { type = "IRC"; };
   freenode = { type = "IRC"; };
-  bitlbee = {
-    autosendcmd = "/^msg -bitlbee &bitlbee identify password";
-    type = "IRC";
-  };
 };
 
 channels = (
@@ -311,16 +299,6 @@ windows = {
     immortal = "yes";
     name = "(msgs)";
     level = "MSGS ACTIONS DCCMSGS";
-  };
-  2 = {
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "IRC";
-        name = "&bitlbee";
-        tag = "bitlbee";
-      }
-    );
   };
   3 = {
     items = (
