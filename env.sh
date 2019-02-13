@@ -77,6 +77,6 @@ alias mutt='TERM=vt100 mutt'
 alias tmux="tmux -2"
 [[ -f '/opt/google-cloud-sdk/path.bash.inc' ]] && source '/opt/google-cloud-sdk/path.bash.inc' [[ -f '/opt/google-cloud-sdk/completion.bash.inc' ]] && source '/opt/google-cloud-sdk/completion.bash.inc'
 which bat >/dev/null && alias cat='bat'
-which direnv >/dev/null && eval `direnv hook $0`
+which direnv >/dev/null && eval "$(direnv hook $0)"
 which pyenv >/dev/null && eval "$(pyenv init -)"
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
