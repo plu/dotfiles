@@ -143,6 +143,7 @@ if has("autocmd")
     autocmd! BufRead,BufNewFile *.podspec set filetype=ruby
     autocmd! BufRead,BufNewFile Jenkinsfile set filetype=groovy
     autocmd! BufRead,BufNewFile Fastfile set filetype=ruby
+    autocmd! BufRead,BufNewFile BUCK set filetype=python
 
     autocmd Filetype perl nmap <leader>pt :call DoTidy()<CR>
     autocmd Filetype perl vmap <leader>pt :Tidy<CR>
