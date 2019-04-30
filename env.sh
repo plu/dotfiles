@@ -15,12 +15,11 @@ if [[ "$OS" == "Darwin" ]]; then
   export PATH=$GO_HOME/bin:$PATH
   export PATH=$JAVA_HOME/bin:$PATH
   export PATH=/Applications/VMware\ Fusion.app/Contents/Library:$PATH
-  export PATH=/Applications/android-sdk-macos/sdk/platform-tools:$PATH
-  export PATH=/Applications/android-sdk-macos/sdk/tools:$PATH
   export PATH=/opt/appengine-java-sdk/bin:$PATH
   export PATH=/opt/go_appengine:$PATH
   export PATH=/opt/play:$PATH
   export PATH=/usr/local/bin:$PATH
+  export PATH=/usr/local/sbin:$PATH
   export PATH=/usr/local/heroku/bin:$PATH
   export PATH=/usr/local/mysql/bin:$PATH
   export PATH=/usr/local/packer:$PATH
@@ -28,6 +27,9 @@ if [[ "$OS" == "Darwin" ]]; then
   export PATH=/usr/local/bin/Sencha/Cmd:$PATH
   export PATH=/usr/local/opt/mysql-client/bin:$PATH
   export PATH=$PATH:/usr/local/opt/go/libexec/bin
+  export PATH=~/Library/Android/sdk/tools:$PATH
+  export PATH=~/Library/Android/sdk/platform-tools:$PATH
+  export PATH=/usr/local/flutter/bin:$PATH
 elif [[ "$OS" == "Linux" ]]; then
   export LSOPTIONS='--color=auto'
   export SWIFT_ROOT=/opt/swift
