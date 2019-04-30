@@ -9,8 +9,8 @@
 *.sw
 *.swp
 *~.nib
-.agignore
 .DS_Store
+.agignore
 .envrc
 .llrc
 .tracker.json
@@ -19,3 +19,4 @@
 /build
 /inc
 /xcuserdata
+IDEWorkspaceChecks.plist
