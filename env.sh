@@ -74,6 +74,7 @@ alias tmux="tmux -2"
 [[ -f '/usr/local/google-cloud-sdk/path.bash.inc' ]] && source '/usr/local/google-cloud-sdk/path.bash.inc'
 [[ -f '/usr/local/google-cloud-sdk/completion.bash.inc' ]] && source '/usr/local/google-cloud-sdk/completion.bash.inc'
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+[[ -s $HOME/.gvm/scripts/gvm ]] && source $HOME/.gvm/scripts/gvm
 which bat >/dev/null && alias cat='bat'
 which pyenv >/dev/null && eval "$(pyenv init -)"
 which direnv >/dev/null && eval "$(direnv hook bash)"
