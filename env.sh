@@ -71,8 +71,8 @@ alias ll='ls $LSOPTIONS -lA'
 alias ls='ls $LSOPTIONS'
 alias mutt='TERM=vt100 mutt'
 alias tmux="tmux -2"
-[[ -f '/usr/local/google-cloud-sdk/path.bash.inc' ]] && source '/usr/local/google-cloud-sdk/path.bash.inc'
-[[ -f '/usr/local/google-cloud-sdk/completion.bash.inc' ]] && source '/usr/local/google-cloud-sdk/completion.bash.inc'
+[[ -f '/usr/local/google-cloud-sdk/path.zsh.inc' ]] && source '/usr/local/google-cloud-sdk/path.zsh.inc'
+[[ -f '/usr/local/google-cloud-sdk/completion.zsh.inc' ]] && source '/usr/local/google-cloud-sdk/completion.zsh.inc'
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 [[ -s $HOME/.gvm/scripts/gvm ]] && source $HOME/.gvm/scripts/gvm
 which bat >/dev/null && alias cat='bat'
