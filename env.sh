@@ -59,6 +59,7 @@ export LC_ALL="en_US.UTF-8"
 export PAGER=less
 export PATH=$HOME/bin:$PATH
 export TZ=Europe/Berlin
+export TERM=screen-256color
 
 alias vbi='vim +BundleInstall +qall'
 alias diff='diff -Nuarbw'
