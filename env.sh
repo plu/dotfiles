@@ -8,7 +8,8 @@ OS=$(uname)
 if [[ "$OS" == "Darwin" ]]; then
   export COPYFILE_DISABLE=true
   export COPY_EXTENDED_ATTRIBUTES_DISABLE=true
-  export GOPATH=~/Development/go
+  [ -d ~/Development/go ] && export GOPATH=~/Development/go
+  [ -d /Development/go ] && export GOPATH=/Development/go
   export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
   export LSOPTIONS='-G'
   export PATH=$GOPATH/bin:$PATH
@@ -23,6 +24,7 @@ if [[ "$OS" == "Darwin" ]]; then
   export PATH=~/Library/Android/sdk/tools:$PATH
   export PATH=~/Library/Android/sdk/platform-tools:$PATH
   export PATH=/usr/local/flutter/bin:$PATH
+  export PATH=/usr/local/google-cloud-sdk/bin/:$PATH
 elif [[ "$OS" == "Linux" ]]; then
   export LSOPTIONS='--color=auto'
   export SWIFT_ROOT=/opt/swift
