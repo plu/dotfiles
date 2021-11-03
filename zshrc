@@ -1,3 +1,5 @@
+DISABLE_MAGIC_FUNCTIONS=true
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -47,4 +49,3 @@ plugins=(
 [[ -x $HOME/.dotfiles-secret/install.sh ]] && $HOME/.dotfiles-secret/install.sh
 source $ZSH/oh-my-zsh.sh
 source $HOME/.env.sh
-
