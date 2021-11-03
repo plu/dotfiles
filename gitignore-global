@@ -12,6 +12,7 @@
 .DS_Store
 .agignore
 .envrc
+.idea
 .llrc
 .tracker.json
 /MANIFEST
@@ -20,3 +21,5 @@
 /inc
 /xcuserdata
 IDEWorkspaceChecks.plist
+plu.xcuserdatad
+*.iml
