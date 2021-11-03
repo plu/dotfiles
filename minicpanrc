@@ -1,3 +1,0 @@
-local: /opt/cpan
-remote: http://ftp.hosteurope.de/pub/CPAN/
-exact_mirror: 1
