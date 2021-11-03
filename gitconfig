@@ -1,35 +1,35 @@
 [user]
-    name = Johannes Plunien
     email = johannes@plunien.de
+    name = Johannes Plunien
 [color]
-    status = auto
     branch = auto
-    ui = auto
     interactive = auto
+    status = auto
+    ui = auto
 [alias]
-    st = status
+    bdm = "!git branch --merged | egrep -v '(^\\*|master|develop)' | xargs git branch -d"
     br = branch
+    cfgmail = config user.email
     ci = commit
     co = checkout
     cp = cherry-pick
-    di = diff
-    sy = remote update
-    staged = diff --cached
-    resetns = !git stash save --keep-index && git stash drop
-    prunelocal = "!for branch in $(git branch --merged | grep -v develop); do git branch -d $branch; done"
-    tagx = log --tags --simplify-by-decoration --pretty='format:%ai %d'
-    w = whatchanged
     dc = svn dcommit
-    up = svn rebase --all
-    wtf = !git-wtf
-    cfgmail = config user.email
+    di = diff
     pr  = "!f() { git fetch -fu ${2:-origin} refs/pull/$1/head:pr/$1 && git checkout pr/$1; }; f"
     pr-clean = "!git for-each-ref refs/heads/pr/* --format='%(refname)' | while read ref ; do branch=${ref#refs/heads/} ; git branch -D $branch ; done"
-    bdm = "!git branch --merged | egrep -v '(^\\*|master|develop)' | xargs git branch -d"
+    prunelocal = "!for branch in $(git branch --merged | grep -v develop); do git branch -d $branch; done"
+    resetns = !git stash save --keep-index && git stash drop
+    st = status
+    staged = diff --cached
+    sy = remote update
+    tagx = log --tags --simplify-by-decoration --pretty='format:%ai %d'
+    up = svn rebase --all
+    w = whatchanged
+    wtf = !git-wtf
 [core]
     excludesfile = ~/.gitignore-global
-    pager = less -FXRS -x4
     legacyheaders = false
+    pager = less -FXRS -x4
 [diff]
     rename = copy
     renamelimit = 0
@@ -52,9 +52,9 @@
 [apply]
     whitespace = nowarn
 [sendemail]
+    from = johannes.plunien@xing.com
     suppresscc = all
     to = hudson@build-1.dev.fra2.xing.com
-    from = johannes.plunien@xing.com
 [branch]
     autosetuprebase = always
 [pull]
@@ -62,12 +62,14 @@
 [http]
     sslVerify = false
 [grep]
-    lineNumber = true
     extendedRegexp = true
+    lineNumber = true
 [log]
     decorate = short
 [filter "lfs"]
+	clean = git-lfs clean -- %f
 	process = git-lfs filter-process
 	required = true
-	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
+[url "git@git.aptumtek.com:"]
+	insteadOf = https://git.aptumtek.com/
