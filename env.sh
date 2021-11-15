@@ -55,6 +55,7 @@ export HISTCONTROL=ignoreboth
 export HISTSIZE=100000
 export HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S "
 export LC_ALL="en_US.UTF-8"
+export NVM_DIR="$HOME/.nvm"
 export PAGER=less
 export PATH=$HOME/bin:$PATH
 export SDKMAN_DIR="$HOME/.sdkman"
@@ -80,6 +81,8 @@ alias vbi='vim +BundleInstall +qall'
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+[[ -s "$NVM_DIR/bash_completion" ]] && \. "$NVM_DIR/bash_completion"
+[[ -s "$NVM_DIR/nvm.sh" ]] && \. "$NVM_DIR/nvm.sh"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
