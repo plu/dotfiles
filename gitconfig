@@ -29,7 +29,7 @@
 [core]
     excludesfile = ~/.gitignore-global
     legacyheaders = false
-    pager = less -FXRS -x4
+    pager = delta
 [diff]
     rename = copy
     renamelimit = 0
@@ -73,3 +73,8 @@
 	smudge = git-lfs smudge -- %f
 [url "git@git.aptumtek.com:"]
 	insteadOf = https://git.aptumtek.com/
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    syntax-theme = GitHub
+    features = line-numbers decorations
