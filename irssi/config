@@ -6,27 +6,14 @@ servers = (
     autoconnect = "yes";
     use_ssl = "yes";
     ssl_verify = "no";
-  },
-  {
-    address = "irc.freenode.net";
-    chatnet = "freenode";
-    port = "7000";
-    autoconnect = "yes";
-    use_ssl = "yes";
-    ssl_verify = "no";
   }
 );
 
-chatnets = {
-  pilgerer = { type = "IRC"; };
-  freenode = { type = "IRC"; };
-};
+chatnets = { pilgerer = { type = "IRC"; }; };
 
 channels = (
   { name = "#osm"; chatnet = "pilgerer"; autojoin = "yes"; },
-  { name = "#laboheme"; chatnet = "pilgerer"; autojoin = "yes"; },
-  { name = "#jolokia"; chatnet = "freenode"; autojoin = "yes"; },
-  { name = "#smorch"; chatnet = "freenode"; autojoin = "yes"; },
+  { name = "#laboheme"; chatnet = "pilgerer"; autojoin = "yes"; }
 );
 
 aliases = {
@@ -273,7 +260,8 @@ ignores = (
   { mask = "github!*@*"; level = "JOINS PARTS"; },
   { mask = "github-wet!*@*"; level = "JOINS PARTS"; },
   { mask = "wettengh!*@*"; level = "JOINS PARTS"; },
-  { level = "JOINS"; }
+  { level = "JOINS"; },
+  { level = "JOINS PARTS QUITS"; channels = ( "#osm:" ); }
 );
 
 keyboard = (
@@ -317,26 +305,6 @@ windows = {
         chat_type = "IRC";
         name = "#laboheme";
         tag = "pilgerer";
-      }
-    );
-  };
-  5 = {
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "IRC";
-        name = "#smorch";
-        tag = "freenode";
-      }
-    );
-  };
-  6 = {
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "IRC";
-        name = "#jolokia";
-        tag = "freenode";
       }
     );
   };
