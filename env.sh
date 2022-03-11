@@ -76,6 +76,8 @@ alias tmux="tmux -2"
 alias v=velero
 alias vbi='vim +BundleInstall +qall'
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 [[ -f '/usr/local/google-cloud-sdk/completion.zsh.inc' ]] && source '/usr/local/google-cloud-sdk/completion.zsh.inc'
 [[ -f '/usr/local/google-cloud-sdk/path.zsh.inc' ]] && source '/usr/local/google-cloud-sdk/path.zsh.inc'
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
@@ -83,8 +85,6 @@ alias vbi='vim +BundleInstall +qall'
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 [[ -s "$NVM_DIR/bash_completion" ]] && \. "$NVM_DIR/bash_completion"
 [[ -s "$NVM_DIR/nvm.sh" ]] && \. "$NVM_DIR/nvm.sh"
-
-eval "$(/opt/homebrew/bin/brew shellenv)"
 
 which bat >/dev/null && alias cat='bat'
 which direnv >/dev/null && eval "$(direnv hook bash)"
