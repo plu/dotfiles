@@ -51,6 +51,7 @@ unset LSCOLORS
 unset LC_ALL
 export BAT_THEME=GitHub
 export EDITOR=vim
+export GPG_TTY=$(tty)
 export HISTCONTROL=ignoreboth
 export HISTSIZE=100000
 export HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S "
