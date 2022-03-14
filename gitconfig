@@ -67,12 +67,12 @@
 [log]
     decorate = short
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	process = git-lfs filter-process
-	required = true
-	smudge = git-lfs smudge -- %f
+    clean = git-lfs clean -- %f
+    process = git-lfs filter-process
+    required = true
+    smudge = git-lfs smudge -- %f
 [url "git@git.aptumtek.com:"]
-	insteadOf = https://git.aptumtek.com/
+    insteadOf = https://git.aptumtek.com/
 [interactive]
     diffFilter = delta --color-only
 [delta]
