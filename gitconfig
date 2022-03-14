@@ -78,3 +78,5 @@
 [delta]
     syntax-theme = GitHub
     features = line-numbers decorations
+[includeIf "gitdir:~/Development/work/"]
+    path = ~/Development/work/git.config
