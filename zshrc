@@ -39,7 +39,7 @@ plugins=(
   dotenv
   gem
   git
-  osx
+  macos
   rake
   ruby
   rvm
