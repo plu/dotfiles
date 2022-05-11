@@ -15,6 +15,7 @@ if [[ "$OS" == "Darwin" ]]; then
   export PATH=$JAVA_HOME/bin:$PATH
   export PATH=$PATH:/usr/local/opt/go/libexec/bin
   export PATH=/usr/local/bin:$PATH
+  export PATH=/opt/homebrew/bin:$PATH
   export PATH=/usr/local/flutter/bin:$PATH
   export PATH=/usr/local/google-cloud-sdk/bin/:$PATH
   export PATH=/usr/local/heroku/bin:$PATH
