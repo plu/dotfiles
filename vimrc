@@ -2,10 +2,8 @@ set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Plugin 'gmarik/vundle'
-
-let g:vundle_default_git_proto = 'git'
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'Keithbsmiley/rspec.vim'
 Plugin 'airblade/vim-gitgutter'
@@ -20,7 +18,6 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'rizzatti/dash.vim'
 Plugin 'rizzatti/funcoo.vim'
 Plugin 'rking/ag.vim'
-Plugin 'ryanss/vim-hackernews'
 Plugin 'rodjek/vim-puppet'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
