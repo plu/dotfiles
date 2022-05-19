@@ -39,6 +39,7 @@ Plugin 'tpope/vim-unimpaired'
 Plugin 'fatih/vim-go'
 Plugin 'vim-ruby/vim-ruby'
 
+call vundle#end()
 filetype plugin indent on
 
 " Do not clear sreen on exit.
