@@ -49,3 +49,4 @@ plugins=(
 [[ -x $HOME/.dotfiles-secret/install.sh ]] && $HOME/.dotfiles-secret/install.sh
 source $ZSH/oh-my-zsh.sh
 source $HOME/.env.sh
+unsetopt nomatch
