@@ -87,6 +87,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 [[ -s "$NVM_DIR/bash_completion" ]] && \. "$NVM_DIR/bash_completion"
 [[ -s "$NVM_DIR/nvm.sh" ]] && \. "$NVM_DIR/nvm.sh"
+[[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh
 
 which bat >/dev/null && alias cat='bat'
 which direnv >/dev/null && eval "$(direnv hook bash)"
