@@ -90,7 +90,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 [[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh
 
 which bat >/dev/null && alias cat='bat'
-which direnv >/dev/null && eval "$(direnv hook bash)"
+which direnv >/dev/null && eval "$(direnv hook zsh)"
 which kubectl >/dev/null && source <(kubectl completion zsh)
 which pyenv >/dev/null && eval "$(pyenv init --path)"
 which velero >/dev/null && source <(velero completion zsh)
