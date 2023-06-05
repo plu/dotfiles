@@ -88,6 +88,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 [[ -s "$NVM_DIR/bash_completion" ]] && \. "$NVM_DIR/bash_completion"
 [[ -s "$NVM_DIR/nvm.sh" ]] && \. "$NVM_DIR/nvm.sh"
 [[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh
+[[ -x /usr/libexec/path_helper ]] && eval `/usr/libexec/path_helper -s`
 
 which bat >/dev/null && alias cat='bat'
 which direnv >/dev/null && eval "$(direnv hook zsh)"
