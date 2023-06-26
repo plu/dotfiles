@@ -85,3 +85,5 @@
 [gitreview]
 	remote = origin
 	notopic = true
+[init]
+	defaultBranch = main
