@@ -80,6 +80,8 @@
     features = line-numbers decorations
 [includeIf "gitdir:~/Development/work/"]
     path = ~/Development/work/git.config
+[includeIf "gitdir:~/ios/"]
+    path = ~/ios/git.config
 [protocol]
 	version = 2
 [gitreview]
