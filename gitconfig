@@ -26,10 +26,12 @@
     up = svn rebase --all
     w = whatchanged
     wtf = !git-wtf
+    diff-image = "!f() { cd -- \"${GIT_PREFIX:-.}\"; GIT_DIFF_IMAGE_ENABLED=1 git diff \"$@\"; }; f"
 [core]
     excludesfile = ~/.gitignore-global
     legacyheaders = false
     pager = delta
+    attributesfile = ~/.gitattributes
 [diff]
     rename = copy
     renamelimit = 0
@@ -89,3 +91,5 @@
 	notopic = true
 [init]
 	defaultBranch = main
+[diff "image"]
+    command = /usr/local/bin/git_diff_image
