@@ -75,6 +75,8 @@
     smudge = git-lfs smudge -- %f
 [url "git@git.aptumtek.com:"]
     insteadOf = https://git.aptumtek.com/
+[url "git@github.com:"]
+    insteadOf = https://github.com/
 [interactive]
     diffFilter = delta --color-only
 [delta]
