@@ -53,10 +53,6 @@
     default = tracking
 [apply]
     whitespace = nowarn
-[sendemail]
-    from = johannes.plunien@xing.com
-    suppresscc = all
-    to = hudson@build-1.dev.fra2.xing.com
 [branch]
     autosetuprebase = always
 [pull]
@@ -87,11 +83,11 @@
 [includeIf "gitdir:~/ios/"]
     path = ~/ios/git.config
 [protocol]
-	version = 2
+    version = 2
 [gitreview]
-	remote = origin
-	notopic = true
+    remote = origin
+    notopic = true
 [init]
-	defaultBranch = main
+    defaultBranch = main
 [diff "image"]
     command = /usr/local/bin/git_diff_image
