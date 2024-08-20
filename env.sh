@@ -70,10 +70,8 @@ export HISTCONTROL=ignoreboth
 export HISTSIZE=100000
 export HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S "
 export LC_ALL="en_US.UTF-8"
-export NVM_DIR="$HOME/.nvm"
 export PAGER=less
 export PATH=$HOME/bin:$PATH
-export SDKMAN_DIR="$HOME/.sdkman"
 export TERM=screen-256color
 export TZ=Europe/Berlin
 
@@ -92,22 +90,15 @@ alias v=velero
 alias vbi='vim +BundleInstall +qall'
 
 [[ -x /usr/libexec/path_helper ]] && eval "$(/usr/libexec/path_helper -s)"
+[[ -x /opt/homebrew/bin/mise ]] && eval "$(/opt/homebrew/bin/mise activate zsh)"
+[[ -x /opt/homebrew/bin/brew ]] && eval "$(/opt/homebrew/bin/brew shellenv)"
 
-[[ -f /opt/homebrew/bin/brew ]] && eval "$(/opt/homebrew/bin/brew shellenv)"
 [[ -f /usr/local/google-cloud-sdk/completion.zsh.inc ]] && source /usr/local/google-cloud-sdk/completion.zsh.inc
 [[ -f /usr/local/google-cloud-sdk/path.zsh.inc ]] && source /usr/local/google-cloud-sdk/path.zsh.inc
 [[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh
 [[ -f ~/.ios ]] && source ~/.ios
-[[ -f ~/.local/bin/mise ]] && eval "$(~/.local/bin/mise activate zsh)"
-[[ -s $HOME/.gvm/scripts/gvm ]] && source $HOME/.gvm/scripts/gvm
-[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
-[[ -s $HOME/.sdkman/bin/sdkman-init.sh ]] && source $HOME/.sdkman/bin/sdkman-init.sh
-[[ -s $NVM_DIR/bash_completion ]] && \. $NVM_DIR/bash_completion
-[[ -s $NVM_DIR/nvm.sh ]] && \. $NVM_DIR/nvm.sh
 
 which bat >/dev/null && alias cat='bat'
 which direnv >/dev/null && eval "$(direnv hook zsh)"
 which kubectl >/dev/null && source <(kubectl completion zsh)
-which pyenv >/dev/null && eval "$(pyenv init --path)"
-which rbenv >/dev/null && eval "$(rbenv init - zsh)"
 which velero >/dev/null && source <(velero completion zsh)
