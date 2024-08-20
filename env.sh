@@ -91,20 +91,19 @@ alias tmux="tmux -2"
 alias v=velero
 alias vbi='vim +BundleInstall +qall'
 
-[[ -x /usr/libexec/path_helper ]] && eval `/usr/libexec/path_helper -s`
+[[ -x /usr/libexec/path_helper ]] && eval "$(/usr/libexec/path_helper -s)"
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
-[[ -f '/usr/local/google-cloud-sdk/completion.zsh.inc' ]] && source '/usr/local/google-cloud-sdk/completion.zsh.inc'
-[[ -f '/usr/local/google-cloud-sdk/path.zsh.inc' ]] && source '/usr/local/google-cloud-sdk/path.zsh.inc'
-[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-[[ -s "$NVM_DIR/bash_completion" ]] && \. "$NVM_DIR/bash_completion"
-[[ -s "$NVM_DIR/nvm.sh" ]] && \. "$NVM_DIR/nvm.sh"
+[[ -f /opt/homebrew/bin/brew ]] && eval "$(/opt/homebrew/bin/brew shellenv)"
+[[ -f /usr/local/google-cloud-sdk/completion.zsh.inc ]] && source /usr/local/google-cloud-sdk/completion.zsh.inc
+[[ -f /usr/local/google-cloud-sdk/path.zsh.inc ]] && source /usr/local/google-cloud-sdk/path.zsh.inc
 [[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh
 [[ -f ~/.ios ]] && source ~/.ios
 [[ -f ~/.local/bin/mise ]] && eval "$(~/.local/bin/mise activate zsh)"
+[[ -s $HOME/.gvm/scripts/gvm ]] && source $HOME/.gvm/scripts/gvm
+[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+[[ -s $HOME/.sdkman/bin/sdkman-init.sh ]] && source $HOME/.sdkman/bin/sdkman-init.sh
+[[ -s $NVM_DIR/bash_completion ]] && \. $NVM_DIR/bash_completion
+[[ -s $NVM_DIR/nvm.sh ]] && \. $NVM_DIR/nvm.sh
 
 which bat >/dev/null && alias cat='bat'
 which direnv >/dev/null && eval "$(direnv hook zsh)"
