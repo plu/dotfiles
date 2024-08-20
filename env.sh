@@ -102,3 +102,4 @@ which bat >/dev/null && alias cat='bat'
 which direnv >/dev/null && eval "$(direnv hook zsh)"
 which kubectl >/dev/null && source <(kubectl completion zsh)
 which velero >/dev/null && source <(velero completion zsh)
+which rbenv >/dev/null && eval "$(rbenv init - zsh)"
